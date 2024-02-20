@@ -6,6 +6,9 @@ import Register from "./pages/Register";
 import './App.css';
 import { useState, useEffect } from "react";
 import Loader from "./components/Loader";
+import Signup from "./pages/signup";
+import Login from "./pages/login";
+import UserDetails from "./pages/userDetails";
 
 
 function App() {
@@ -13,23 +16,34 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 1000);
   }, []);
+  const isLoggedIn = window.localStorage.getItem("loggedIn");
   return (
     <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <Router>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="*" element={<Error />} />
-            </Route>
-          </Routes>
-        </Router>
-      )}
+      {
+        isLoading ? (
+          <Loader />
+        ) : (
+          <Router>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="*" element={<Error />} />
+                <Route path="/sign-up" element={<Signup />} />
+                <Route
+                  exact
+                  path="/user"
+                  element={isLoggedIn === "true" ? <UserDetails /> : <Login />}
+                />
+                <Route path="/sign-in" element={<Login />} />
+                <Route path="/userDetails" element={<UserDetails />} />
+              </Route>
+            </Routes>
+          </Router>
+        )
+      }
 
     </>
 
