@@ -1,3 +1,7 @@
+:root {
+  --cursor-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,4 +43,8 @@ html {
   border-radius: 16px;
   border: 0.3rem solid transparent;
   background-clip: content-box;
+}
+hr{
+  width: 10px;
+  color: whitesmoke;
 }
