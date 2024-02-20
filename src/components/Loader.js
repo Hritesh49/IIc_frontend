@@ -1,8 +1,15 @@
-import React from 'react'
+import { Stack } from '@mui/material';
+import React from 'react';
+
 
 function Loader() {
+
   return (
-    <div>Loader</div>
+    <>
+      <Stack sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100dvh', background: '#1d203f' }}>
+        <img className='blink' src='./iic_logo.png' alt='Logo of IEEE blinking' />
+      </Stack>
+    </>
   )
 }
 
