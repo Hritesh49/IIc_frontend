@@ -157,10 +157,10 @@ export default function SignUp() {
                                 <option value="mechanical" style={{ color: '#021E30' }}>Mech</option>
                                 <option value="propulsion" style={{ color: '#021E30' }}>EE</option>
                                 <option value="management" style={{ color: '#021E30' }}>EEE</option>
-                                <option value="Production" style={{ color: '#021E30' }}>Production</option>
-                                <option value="Int maths" style={{ color: '#021E30' }}>Int maths</option>
-                                <option value="Int phy" style={{ color: '#021E30' }}>Int phy</option>
-                                <option value="Int chem" style={{ color: '#021E30' }}>Int chem</option>
+                                    <option value="Production" style={{ color: '#021E30' }}>Production</option>
+                                    <option value="Int maths" style={{ color: '#021E30' }}>Int maths</option>
+                                    <option value="Int phy" style={{ color: '#021E30' }}>Int phy</option>
+                                    <option value="Int chem" style={{ color: '#021E30' }}>Int chem</option>
                                 <option value="graphics" style={{ color: '#021E30' }}>MME</option>
                                 <option value="video-editing" style={{ color: '#021E30' }}>CHE</option>
                                 <option value="content-writing" style={{ color: '#021E30' }}>CIVIL</option>
@@ -205,7 +205,7 @@ export default function SignUp() {
                                 <option value="cs" style={{ color: '#021E30' }}>CS</option>
                                 <option value="electronics" style={{ color: '#021E30' }}>Electronic</option>
                                 <option value="mechanical" style={{ color: '#021E30' }}>Mechanical </option>
-                                <option value="propulsion" style={{ color: '#021E30' }}>Propulsion </option>
+                                <option value="chemical" style={{ color: '#021E30' }}>Chemical </option>
                                 <option value="management" style={{ color: '#021E30' }}>Management</option>
                                 <option value="graphics" style={{ color: '#021E30' }}>Graphics Designing</option>
                                 <option value="video-editing" style={{ color: '#021E30' }}>Video Editing</option>
