@@ -177,7 +177,7 @@ function Home() {
           >
             <Domain />
           </Stack>
-          
+          <Contact/>
           <Stack width={"100%"}>
             <Footer />
           </Stack>
