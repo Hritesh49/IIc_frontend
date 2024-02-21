@@ -8,7 +8,7 @@ export default function UserHome({ userData }) {
         window.location.href = "./sign-in";
     };
     return (
-        <Stack sx={{ width: "100%", height: "100dvh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Stack sx={{ width: "100%", height: "100dvh", display: "flex", justifyContent: "center", alignItems: "center",, background: "#021E30" }}>
             <Stack sx={{ width: { xs: '100%', sm: '85%', md: '80%' }, height: { xs: "100dvh", sm: '85dvh', md: '90dvh' }, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", boxShadow: ".0625rem .0625rem .625rem .5rem #00000048", borderRadius: '.75rem', border: { xs: "2px solid white", sm: "none" } }}>
                 <Stack sx={{ background: `url(./iic_logo.png)`, height: '100%', display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'contain', zIndex: '1', width: '100%', flex: '1', opacity: { xs: '0.1', md: '1' }, borderRight: { xs: "0px", md: '.25rem solid #021621' }, position: { xs: "absolute", md: "relative" } }}>
                 </Stack>

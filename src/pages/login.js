@@ -42,7 +42,7 @@ export default function Login() {
   }
 
   return (
-    <Stack sx={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: 'center', height: "100dvh" }}>
+    <Stack sx={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: 'center', height: "100dvh",background:"#021E30" }}>
       <Stack sx={{ display: "flex", flexDirection: "row", width: { xs: "100%", sm: "90%", md: '80%' }, height: { xs: '100dvh', md: '90dvh' }, boxShadow: "1px 1px 10px 8px #00000048", borderRadius: '8px', border: { xs: "2px solid white", sm: "none" } }}>
         <Stack sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center', flex: '1', background: `url(./osama.png)`, backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: 'cover', borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px" }}>
         </Stack>
