@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
 
     console.log(email, password);
-    fetch("http://localhost:5000/login-user", {
+    fetch("https://iic-backend-r3jg.onrender.com/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -36,7 +36,7 @@ export default function Login() {
           window.location.href = "./userDetails";
           setTimeout(() => {
             navigate('/userDetails');
-          }, 1000);
+          }, 500);
         }
       });
   }

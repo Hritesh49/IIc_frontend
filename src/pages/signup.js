@@ -6,7 +6,6 @@ export default function SignUp() {
 
     const [fname, setFname] = useState("");
     const [pnum, setPnum] = useState("");
-    const [loading, setloading] = React.useState(false);
     const [rnum, setRnum] = useState("");
     const [email, setEmail] = useState("");
     const [branch, setBranch] = useState("");
@@ -21,7 +20,7 @@ export default function SignUp() {
         e.preventDefault();
 
         console.log(fname, pnum, rnum, email, branch, dpone, dptwo, password);
-        fetch("http://localhost:5000/register", {
+        fetch("https://iic-backend-r3jg.onrender.com/register", {
             method: "POST",
             crossDomain: true,
             headers: {
@@ -48,7 +47,7 @@ export default function SignUp() {
                     alert("Registration Successful");
                     setTimeout(() => {
                         navigate('/sign-in');
-                    }, 1000);
+                    }, 500);
                 } else {
                     alert("Something went wrong");
                 }
