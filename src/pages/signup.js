@@ -135,7 +135,7 @@ export default function SignUp() {
                         </Stack>
 
                         <Stack sx={{ width: '100%' }}>
-                            <TextField
+                            {/* <TextField
                                 required fullWidth id="outlined-required" label="Branch" name='branch' type='text' placeholder='Enter Branch' onChange={(e) => setBranch(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
                                     '& .MuiInputBase-input': {
                                         color: 'whitesmoke',
@@ -149,7 +149,31 @@ export default function SignUp() {
                                     '& .MuiInput-underline:after': {
                                         borderBottomColor: 'whitesmoke',
                                     },
-                                }} variant="standard" />
+                                }} variant="standard" /> */}
+
+                            <select required name='domain one' onChange={(e) => setDPone(e.target.value)} style={{
+                                padding: '.625rem',
+                                fontSize: '1rem',
+                                border: '.0625rem solid #ccc',
+                                borderRadius: '.3125rem',
+                                width: '100%',
+                                boxSizing: 'border-box',
+                                background: 'transparent',
+                                color: 'whitesmoke',
+                            }}>
+                                <option value="" disabled selected>Select your Branch</option>
+                                <option value="cs" style={{ color: '#021E30' }}>CS</option>
+                                <option value="content-writing" style={{ color: '#021E30' }}>IT</option>
+                                <option value="electronics" style={{ color: '#021E30' }}>ETC</option>
+                                <option value="mechanical" style={{ color: '#021E30' }}>Mech</option>
+                                <option value="propulsion" style={{ color: '#021E30' }}>EE</option>
+                                <option value="management" style={{ color: '#021E30' }}>EEE</option>
+                                <option value="graphics" style={{ color: '#021E30' }}>MME</option>
+                                <option value="video-editing" style={{ color: '#021E30' }}>CHE</option>
+                                <option value="content-writing" style={{ color: '#021E30' }}>CIVIL</option>
+                                
+                            </select>
+
                         </Stack>
 
                         <Stack gap={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
