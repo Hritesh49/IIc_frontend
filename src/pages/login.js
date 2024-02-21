@@ -51,7 +51,7 @@ export default function Login() {
           </Stack>
           <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '24px', zIndex: '2' }}>
             <AccountCircleIcon sx={{ fontSize: "6.25rem", color: 'whitesmoke' }} />
-            <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px' }}>Sign In</Typography>
+            <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Poppins, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px' }}>Sign In</Typography>
             <Stack sx={{ width: '100%' }}>
               <TextField
                 required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke",fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{

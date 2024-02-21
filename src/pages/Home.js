@@ -113,7 +113,7 @@ function Home() {
                     fontWeight: 'bolder',
                     textAlign: 'center',
                     width: '100%',
-                    fontFamily: 'Roboto Condensed, sans-serif'
+                    fontFamily: 'Poppins, sans-serif'
                   }}
                 >
                   Induction 2024
@@ -126,7 +126,7 @@ function Home() {
                     textAlign: 'center',
                     lineHeight: { md: '2' },
                     width: '100%',
-                    fontFamily: 'Roboto Condensed, sans-serif'
+                    fontFamily: 'Poppins, sans-serif'
                   }}
                 >
                   "Innovation is the ability to see change as an opportunity" Idea

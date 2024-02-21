@@ -66,13 +66,13 @@ const Contact = () => {
                     height: "9.375rem",
                     color: 'whitewhite'
                 }}>
-                <Typography variant="h4" sx={{ fontWeight: 'bolder', color: 'white', fontSize: { xs: "2.1875rem", md: '1.605rem' }, fontFamily: 'Roboto Condensed, sans-serif' }} >{title}</Typography>
-                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif' }}>{post}</Typography>
-                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif' }}>{club}</Typography>
-                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif' }} >Phone No. : {Phno}</Typography>
+                <Typography variant="h4" sx={{ fontWeight: 'bolder', color: 'white', fontSize: { xs: "2.1875rem", md: '1.605rem' }, fontFamily: 'Poppins, sans-serif' }} >{title}</Typography>
+                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }}>{post}</Typography>
+                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }}>{club}</Typography>
+                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }} >Phone No. : {Phno}</Typography>
                 <Stack gap={4} sx={{ display: "flex", flexDirection: "row" }}>
-                    <Link mailto={email} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif' }} ><EmailIcon /></Link>
-                    <Link href={link} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif' }} ><LinkedInIcon /></Link>
+                    <Link mailto={email} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }} ><EmailIcon /></Link>
+                    <Link href={link} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }} ><LinkedInIcon /></Link>
                 </Stack>
             </Stack>
         </Box >
@@ -100,7 +100,7 @@ const Contact = () => {
                     fontWeight: 'bolder',
                     textAlign: 'center',
                     width: '100%',
-                    fontFamily: 'Roboto Condensed, sans-serif',
+                    fontFamily: 'Poppins, sans-serif',
                     paddingBottom: '1rem',
                     borderBottom: '2px solid white'
                 }}>
