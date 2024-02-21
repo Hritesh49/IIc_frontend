@@ -152,18 +152,18 @@ export default function SignUp() {
                             }}>
                                 <option value="" disabled selected>Select your Branch</option>
                                 <option value="cs" style={{ color: '#021E30' }}>CS</option>
-                                <option value="content-writing" style={{ color: '#021E30' }}>IT</option>
-                                <option value="electronics" style={{ color: '#021E30' }}>ETC</option>
-                                <option value="mechanical" style={{ color: '#021E30' }}>Mech</option>
-                                <option value="propulsion" style={{ color: '#021E30' }}>EE</option>
-                                <option value="management" style={{ color: '#021E30' }}>EEE</option>
-                                    <option value="Production" style={{ color: '#021E30' }}>Production</option>
-                                    <option value="Int maths" style={{ color: '#021E30' }}>Int maths</option>
-                                    <option value="Int phy" style={{ color: '#021E30' }}>Int phy</option>
-                                    <option value="Int chem" style={{ color: '#021E30' }}>Int chem</option>
-                                <option value="graphics" style={{ color: '#021E30' }}>MME</option>
-                                <option value="video-editing" style={{ color: '#021E30' }}>CHE</option>
-                                <option value="content-writing" style={{ color: '#021E30' }}>CIVIL</option>
+                                <option value="it" style={{ color: '#021E30' }}>IT</option>
+                                <option value="etc" style={{ color: '#021E30' }}>ETC</option>
+                                <option value="mech" style={{ color: '#021E30' }}>Mech</option>
+                                <option value="ee" style={{ color: '#021E30' }}>EE</option>
+                                <option value="eee" style={{ color: '#021E30' }}>EEE</option>
+                                <option value="Prod" style={{ color: '#021E30' }}>Production</option>
+                                <option value="Int maths" style={{ color: '#021E30' }}>Int maths</option>
+                                <option value="Int phy" style={{ color: '#021E30' }}>Int phy</option>
+                                <option value="Int chem" style={{ color: '#021E30' }}>Int chem</option>
+                                <option value="mme" style={{ color: '#021E30' }}>MME</option>
+                                <option value="che" style={{ color: '#021E30' }}>CHE</option>
+                                <option value="ce" style={{ color: '#021E30' }}>CIVIL</option>
 
                             </select>
 
