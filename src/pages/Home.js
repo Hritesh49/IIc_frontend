@@ -76,9 +76,9 @@ function Home() {
               justifyContent: 'center',
               alignItems: "center"
             }}
-            ref={about}
           >
             <Stack
+              ref={about}
               gap={2}
               sx={{
                 display: 'flex',
@@ -109,7 +109,7 @@ function Home() {
                 <Typography
                   variant='h3'
                   sx={{
-                    fontSize: { xs: '4.6875rem', md: '60px' },
+                    fontSize: { xs: '3.75rem', md: '50px' },
                     fontWeight: 'bolder',
                     textAlign: 'center',
                     width: '100%',
@@ -121,7 +121,7 @@ function Home() {
                 <Typography
                   variant='body1'
                   sx={{
-                    fontSize: { xs: '1.5rem', md: '20px' },
+                    fontSize: { xs: '1.5rem', md: '18px' },
                     fontWeight: '200',
                     textAlign: 'center',
                     lineHeight: { md: '2' },
@@ -177,7 +177,7 @@ function Home() {
           >
             <Domain />
           </Stack>
-          <Stack sx={{ width: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <Stack ref={contact} sx={{ width: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Contact />
           </Stack>
         </Stack>

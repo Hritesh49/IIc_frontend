@@ -28,7 +28,7 @@ function Domain() {
       sx={{
         display: 'flex',
         minWidth: { xs: '18.75rem', md: '250px' },
-        height: { xs: '29.125rem', md: '500px' },
+        height: { xs: '28rem', md: '450px' },
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
@@ -67,10 +67,9 @@ function Domain() {
           height: "9.375rem",
         }}>
 
-        <Typography variant="h4" sx={{ fontWeight: 'bolder', color: '#021E30', fontSize: { xs: "2.1875rem", md: '1.605rem' }, fontFamily: 'Poppins, sans-serif' }} >{title}</Typography>
-
+        <Typography variant="h4" sx={{ fontWeight: 'bolder', color: '#021E30', fontSize: { xs: "1.875rem", md: '1.375rem' }, fontFamily: 'Poppins, sans-serif' }} >{title}</Typography>
         {content.map((line, index) => (
-          <Typography variant='body1' sx={{ fontWeight: '500', color: '#021E30', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }} key={index}>{line}</Typography>
+          <Typography variant='body1' sx={{ fontWeight: '500', color: '#021E30', fontSize: { xs: "1.15rem", md: '1.15rem' }, fontFamily: 'Poppins, sans-serif' }} key={index}>{line}</Typography>
         ))}
       </Stack>
     </Box >
@@ -79,7 +78,7 @@ function Domain() {
     <>
       <Stack sx={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: { xs: '1.25rem 0px 1.25rem 1.25rem', md: '30px 0px 30px 30px' }, borderTop: '.125rem solid white', borderBottom: '.125rem solid white', fontFamily: 'Poppins, sans-serif' }}>
         <Stack sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '8.75rem' }}>
-          <Typography variant='h3' sx={{ color: 'whitesmoke', fontWeight: 'bolder', fontSize: { xs: "7.5rem", md: '90px' }, rotate: '270deg', height: { xs: "9.375rem", md: '100px' }, fontFamily: 'Poppins, sans-serif', letterSpacing: { xs: ".875rem", md: '12px' } }}>Domains</Typography>
+          <Typography variant='h3' sx={{ color: 'whitesmoke', fontWeight: 'bolder', fontSize: { xs: "6rem", md: '80px' }, rotate: '270deg', height: { xs: "8rem", md: '90px' }, fontFamily: 'Poppins, sans-serif', letterSpacing: { xs: ".875rem", md: '8px' } }}>Domains</Typography>
         </Stack>
         <Stack className='domain' gap={2} sx={{
           width: '100%', display: 'flex', flexDirection: 'row', overflowX: 'scroll', padding: '1.25rem', borderRadius: "0.5rem", alignItems: 'center', height: '100%'

@@ -52,6 +52,7 @@ const Contact = () => {
                 <img src={pic} style={{ width: "7rem", height: '7rem', borderRadius: "50%", objectFit: "fill" }} />
             </Stack>
             <Stack
+            gap={2}
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
@@ -66,13 +67,13 @@ const Contact = () => {
                     height: "9.375rem",
                     color: 'whitewhite'
                 }}>
-                <Typography variant="h4" sx={{ fontWeight: 'bolder', color: 'white', fontSize: { xs: "2.1875rem", md: '1.605rem' }, fontFamily: 'Poppins, sans-serif' }} >{title}</Typography>
-                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }}>{post}</Typography>
-                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }}>{club}</Typography>
-                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }} >Phone No. : {Phno}</Typography>
+                <Typography variant="h4" sx={{ fontWeight: 'bolder', color: 'white', fontSize: { xs: "1.875rem", md: '1.375rem' }, fontFamily: 'Poppins, sans-serif' }} >{title}</Typography>
+                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1rem' }, fontFamily: 'Poppins, sans-serif' }}>{post}</Typography>
+                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1rem' }, fontFamily: 'Poppins, sans-serif' }}>{club}</Typography>
+                <Typography variant='body1' sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1rem' }, fontFamily: 'Poppins, sans-serif' }} >Phone No. : {Phno}</Typography>
                 <Stack gap={4} sx={{ display: "flex", flexDirection: "row" }}>
-                    <Link mailto={email} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }} ><EmailIcon /></Link>
-                    <Link href={link} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }} ><LinkedInIcon /></Link>
+                    <Link mailto={email} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1rem' }, fontFamily: 'Poppins, sans-serif' }} ><EmailIcon /></Link>
+                    <Link href={link} sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.25rem", md: '1rem' }, fontFamily: 'Poppins, sans-serif' }} ><LinkedInIcon /></Link>
                 </Stack>
             </Stack>
         </Box >
@@ -96,7 +97,7 @@ const Contact = () => {
                 }}
             >
                 <Typography variant='h3' sx={{
-                    fontSize: { xs: '4.6875rem', md: '60px' },
+                    fontSize: { xs: '3.75rem', md: '50px' },
                     fontWeight: 'bolder',
                     textAlign: 'center',
                     width: '100%',
@@ -107,13 +108,13 @@ const Contact = () => {
                     Contact Us
                 </Typography>
                 <Stack gap={6} sx={{ width: '100%', display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
-                    <Typography sx={{ fontSize: { xs: "1.25rem", md: '1.25rem' } }}>For help in any kind of Query related to the Idea Innovation Cell Induction-2024 you may contact :</Typography>
+                    <Typography sx={{ fontSize: { xs: "1.25rem", md: '1.125rem' } }}>For help in any kind of Query related to the Idea Innovation Cell Induction-2024 you may contact :</Typography>
                     <Stack gap={6} sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', width: '100%', justifyContent: 'center', alignItems: 'center', }}>
                         {post_holder.map(contact => createBox(contact.pic, contact.title, contact.post, contact.club, contact.Phno, contact.email, contact.link))}
                     </Stack>
                 </Stack>
                 <Stack gap={6} sx={{ width: '100%', display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center', marginTop: "1.5rem" }}>
-                    <Typography sx={{ fontSize: { xs: "1.25rem", md: '1.25rem' } }}>For any Website or Registration Portal related queries contact :</Typography>
+                    <Typography sx={{ fontSize: { xs: "1.25rem", md: '1.125rem' } }}>For any Website or Registration Portal related queries contact :</Typography>
                     <Stack gap={6} sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', width: '100%', justifyContent: 'center', alignItems: 'center', }}>
                         {post.map(contact => createBox(contact.pic, contact.title, contact.post, contact.club, contact.Phno, contact.email, contact.link))}
                     </Stack>

@@ -107,7 +107,7 @@ html {
 }
 
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1441px) {
   html {
     font-size: 80%;
   }
@@ -157,7 +157,7 @@ html {
 
 @media screen and (max-width:599px) {
   html {
-    font-size: 76%;
+    font-size: 70%;
   }
 
   .lottie {

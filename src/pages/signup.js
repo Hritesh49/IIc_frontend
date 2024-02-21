@@ -63,7 +63,7 @@ export default function SignUp() {
                     <Stack sx={{ background: `url(./iic_logo.png)`, height: '100%', display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'contain', zIndex: '1', width: '100%', position: "absolute", opacity: '0.2' }}>
                     </Stack>
                     <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '8px', zIndex: '2', }}>
-                        <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px', }}>Sign Up</Typography>
+                        <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Poppins, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px', }}>Sign Up</Typography>
                         <Stack sx={{ width: '100%', }}>
                             <TextField
                                 required fullWidth id="outlined-required" label="Full Name" name='full name' type='text' placeholder='Enter full name' onChange={(e) => setFname(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{

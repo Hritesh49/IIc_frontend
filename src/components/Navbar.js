@@ -10,7 +10,8 @@ function Navbar({ onClick1, onClick2, onClick3, onClick4 }) {
     cursor: "pointer",
     textDecoration: 'none',
     transition: ".2s ease",
-    '&:hover': { textDecoration: "underline" }
+    fontFamily: "Poppins, sans-serif",
+    '&:hover': { textDecoration: "underline" },
   };
 
   const location = useLocation();
@@ -40,7 +41,7 @@ function Navbar({ onClick1, onClick2, onClick3, onClick4 }) {
     <>
       <Box sx={{ width: "100%", background: "#021621", color: "white", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: ".25rem 3.125rem", position: 'fixed', zIndex: "99" }}>
         <img style={{ width: "6.25rem", height: "6.25rem", }} src='./iic_logo.png' alt='Logo of IIC' />
-        <Stack sx={{ display: { xs: "none", sm: "flex" }, flexDirection: "row", fontSize: "1.5rem", fontWeight: "900", gap: "1.125rem" }}>
+        <Stack sx={{ display: { xs: "none", sm: "flex" }, flexDirection: "row", fontSize: "1.5rem", fontWeight: "bold", gap: "1.125rem" }}>
           {links.map((link, index) => (
             <Link key={index} className='text' component={link.to ? RouterLink : 'a'} to={link.to} href={link.to} sx={linkStyles} onClick={link.onClick}>
               {link.text}

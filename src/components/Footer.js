@@ -6,7 +6,6 @@ import you from "../assets/Animation - 1708551992046.json";
 import git from "../assets/Animation - 1708552066124.json";
 import face from "../assets/Animation - 1708551869893.json";
 import lin from "../assets/Animation - 1708552149066.json";
-import "./footer.css";
 
 function Footer() {
   return (
@@ -24,8 +23,8 @@ function Footer() {
           padding: '1rem 0rem'
         }}
       >
-        <Typography variant="h4" sx={{ fontWeight: 'bolder', fontSize: { xs: "2.1875rem", md: '1.605rem' }, fontFamily: 'Roboto Condensed, sans-serif' }}>Our Social Networks</Typography>
-        <Typography variant="body1" sx={{ fontWeight: 'lighter', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif' }}>Follow our social media handles to stay updated!</Typography>
+        <Typography variant="h4" sx={{ fontWeight: 'bolder', fontSize: { xs: "2.1875rem", md: '1.605rem' }, fontFamily: 'Poppins, sans-serif' }}>Our Social Networks</Typography>
+        <Typography variant="body1" sx={{ fontWeight: '400', fontSize: { xs: "1.25rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif' }}>Follow our social media handles to stay updated!</Typography>
         <Stack direction="row" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Link href="https://www.instagram.com/idea_labs/"><Lottie style={{ width: '4.8125rem', height: '4.8125rem', cursor: 'pointer' }} animationData={imsta} /></Link>
           <Link href="https://www.facebook.com/ideaclubvssut"><Lottie style={{ width: '4.8125rem', height: '4.8125rem', cursor: 'pointer' }} animationData={face} /></Link>
@@ -34,7 +33,7 @@ function Footer() {
           <Link href="https://www.linkedin.com/company/idea-and-innovation-cell/"><Lottie style={{ width: '4.8125rem', height: '4.8125rem', cursor: 'pointer' }} animationData={lin} /></Link>
         </Stack>
       </Stack>
-      <Typography variant="body1" sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.75rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif', width: '100%', margin: "2rem 0px" }}>
+      <Typography variant="body1" sx={{ fontWeight: '400', color: 'white', fontSize: { xs: "1.5rem", md: '1.25rem' }, fontFamily: 'Poppins, sans-serif', width: '100%', margin: "2rem 0px" }}>
         © Copyright Idea Innovation Cell. All Rights Reserved
       </Typography>
     </Stack>
