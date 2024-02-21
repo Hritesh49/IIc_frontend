@@ -65,7 +65,7 @@ function Home() {
             alignItems: 'center',
             justifyContent: 'center',
             paddingTop: "6rem",
-            paddingBottom: '1.5rem'
+            paddingBottom: '6rem',
           }}
         >
           {/* about us.............. */}
@@ -177,10 +177,12 @@ function Home() {
           >
             <Domain />
           </Stack>
-          
-          <Stack width={"100%"}>
-            <Footer />
+          <Stack sx={{ width: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Contact />
           </Stack>
+        </Stack>
+        <Stack width={"100%"}>
+          <Footer />
         </Stack>
       </Stack >
     </>
