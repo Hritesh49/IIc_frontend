@@ -12,9 +12,9 @@ const Contact = () => {
     ];
 
     const post = [
-        { pic: "./aditya.jpg", title: 'Tushar Panigrahi', post: "Web developer", club: "Idea Innovation Cell", Phno: "8917292860", email: "adityakumar098k@gmail.com", link: "https://www.linkedin.com/in/tushar-panigrahi-575749237/" },
-        { pic: "./aditya.jpg", title: 'Sibasis Badatya', post: "Web developer", club: "Idea Innovation Cell", Phno: "9114738467", email: "adityakumar098k@gmail.com", link: "https://www.linkedin.com/in/sibasis-badatya-3459a0238/" },
-        { pic: "./aditya.jpg", title: 'Aniket Pradhan', post: "Web developer", club: "Idea Innovation Cell", Phno: "7077628195", email: "adityakumar098k@gmail.com", link: "https://www.linkedin.com/in/aniket-pradhan-88277a238/" },
+        { pic: "./Tushar.jpeg", title: 'Tushar Panigrahi', post: "Web developer", club: "Idea Innovation Cell", Phno: "8917292860", email: "tusharpanigrahi66@gmail.com", link: "https://www.linkedin.com/in/tushar-panigrahi-575749237/" },
+        { pic: "./Sibasis.jpeg", title: 'Sibasis Badatya', post: "Web developer", club: "Idea Innovation Cell", Phno: "9114738467", email: "adityakumar098k@gmail.com", link: "https://www.linkedin.com/in/sibasis-badatya-3459a0238/" },
+        { pic: "./Aniket.jpeg", title: 'Aniket Pradhan', post: "Web developer", club: "Idea Innovation Cell", Phno: "7077628195", email: "aniketpradhan6047@email.com", link: "https://www.linkedin.com/in/aniket-pradhan-88277a238/" },
         { pic: "./aditya.jpg", title: 'Aditya Kumar', post: "Web developer", club: "Idea Innovation Cell", Phno: "9114703231", email: "adityakumar098k@gmail.com", link: "https://www.linkedin.com/in/aditya-kumar-16537025a" },
         { pic: "./me.png", title: 'Hritesh Roshan Mahapatra', post: "Web developer", club: "Idea Innovation Cell", Phno: "8895292542", email: "hritesh532004@gmail.com", link: "http://www.linkedin.com/in/hritesh-roshan-mahapatra-54a75a25b" },
     ]
