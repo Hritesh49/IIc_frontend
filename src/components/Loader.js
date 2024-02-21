@@ -7,7 +7,7 @@ function Loader() {
   return (
     <>
       <Stack sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100dvh', background: '#021E30' }}>
-        <img className='blink' src='./iic_logo.png' alt='Logo of IEEE blinking' />
+        <img className='blink' src='./iic_logo.png' alt='Logo of IIC blinking' />
       </Stack>
     </>
   )
