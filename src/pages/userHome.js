@@ -37,9 +37,9 @@ export default function UserHome({ userData }) {
                     </Stack>
                     {
                         (userData.dpone === 'graphics' || userData.dpone === 'content-writing' || userData.dpone === 'video-editing') ? (
-                            <Link>Link will be updated soon.</Link>
+                            <Link sx={{ color: '#00CED1' }}>Link will be updated soon.</Link>
                         ) : (
-                            <Stack>
+                            <Stack sx={{ width: '100%' }}>
                                 <Stack gap={1} sx={{ display: 'flex', flexDirection: 'column', borderRadius: '.75rem', padding: ".625rem .625rem", width: '100%', justifyContent: 'center', alignItems: 'start', boxShadow: "1px 1px 8px 4px #00000048" }}>
                                     <Stack gap={4} sx={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between', alignItems: 'center', padding: "0rem .625rem", }}>
                                         <Typography variant="h6" sx={{ fontSize: { xs: "1.5rem", md: '1.25rem' } }}>Round 1</Typography>

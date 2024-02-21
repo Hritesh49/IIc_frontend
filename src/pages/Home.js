@@ -5,8 +5,18 @@ import Navbar from '../components/Navbar';
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Landing from '../components/Landing';
+import PDF from "../assets/IIC INDUCTION.docx.pdf";
 
 function Home() {
+
+  const downloadPDF = () => {
+    const link = document.createElement("a");
+    link.href = PDF;
+    link.download = "Induction_process.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const land = useRef(null);
   const about = useRef(null);
@@ -72,7 +82,7 @@ function Home() {
               gap={2}
               sx={{
                 display: 'flex',
-                flexDirection: "row",
+                flexDirection: { xs: "column", md: "row" },
                 color: 'whitesmoke',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -81,15 +91,14 @@ function Home() {
                 padding: { xs: "20px 10px", sm: "30px 15px", md: '25px 30px' },
                 borderRadius: '12px',
                 background: '#0000007f',
-                position: 'relative',
               }}
             >
-              <Stack sx={{ background: `url(./iic_logo.png)`, height: '300px', display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'cover', zIndex: { xs: '2', md: "0" }, width: '300px', position: { xs: 'absolute', md: 'relative' }, opacity: { xs: '0.2', md: "1" } }}>
+              <Stack sx={{ background: `url(./induction.jpg)`, height: { xs: "25rem", md: '300px' }, display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'contain', zIndex: "1", width: { xs: '25rem', md: '350px' } }}>
               </Stack>
               <Stack
                 gap={2}
                 sx={{
-                  width: '100%',
+                  flex: '3',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
@@ -148,6 +157,7 @@ function Home() {
                   </Button>
                   <Button
                     variant='contained'
+                    onClick={downloadPDF}
                     sx={{ padding: { xs: "4px 6px", md: "8px 10px" }, fontSize: { xs: '1rem', md: '14px' }, textAlign: 'center' }}
                   >
                     Get details

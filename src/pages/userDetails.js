@@ -6,7 +6,7 @@ export default function UserDetails() {
 
 
     useEffect(() => {
-        fetch("http://localhost:5000/userData", {
+        fetch("https://iic-backend-r3jg.onrender.com/userData", {
             method: "POST",
             crossDomain: true,
             headers: {

@@ -10,7 +10,9 @@ const Contact = () => {
                 <div className='CardContainer'>
                     <div className='ContactCard'>
                         <div className='UserPicture'>
-                            <img className='imc' src='./debankar.png' alt='User 1' />
+                            <a target='_blank' href='https://www.linkedin.com/in/debankar-shubhram-8025ab238'>
+                                <img className='imc' src='./debankar.png' alt='User 1' />
+                            </a>
                         </div>
                         <p className='UserName'>Debankar  Shubhram
                             <span>Secretary<br /> Idea Innovation Cell
@@ -22,7 +24,9 @@ const Contact = () => {
                     </div>
                     <div className='ContactCard'>
                         <div className='UserPicture'>
-                            <img className='imc' src='./sandip.png' alt='User 2' />
+                            <a target='_blank' href='https://www.linkedin.com/in/sandip-kumar-mohanty-6b1582232'>
+                                <img className='imc' src='./sandip.png' alt='User 2' />
+                            </a>
                         </div>
                         <p className='UserName'>Sandip Kr.  Mohanty
                             <span>Asst.Secretary<br /> Idea Innovation Cell
@@ -36,7 +40,9 @@ const Contact = () => {
                     </div>
                     <div className='ContactCard'>
                         <div className='UserPicture'>
-                            <img src='./satviki.png' alt='User 2' />
+                            <a target='_blank' href='https://www.linkedin.com/in/satviki-pradhan-4a12b3263/'>
+                                <img src='./satviki.png' alt='User 2' />
+                            </a>
                         </div>
                         <p className='UserName'>Satviki Pradhan
                             <span>Asst.Secretary<br /> Idea Innovation Cell
@@ -48,7 +54,9 @@ const Contact = () => {
                     </div>
                     <div className='ContactCard'>
                         <div className='UserPicture'>
-                            <img src='./aditya.jpg' alt='User 2' />
+                            <a target='_blank' href='https://www.linkedin.com/in/aditya-kumar-16537025a'>
+                                <img src='./aditya.jpg' alt='User 2' />
+                            </a>
                         </div>
                         <p className='UserName'>Aditya Kumar
                             <span>Web developer<br /> Idea Innovation Cell
@@ -60,7 +68,9 @@ const Contact = () => {
                     </div>
                     <div className='ContactCard'>
                         <div className='UserPicture'>
-                            <img src='./me.png' alt='User 2' />
+                            <a target='_blank' href='http://www.linkedin.com/in/hritesh-roshan-mahapatra-54a75a25b'>
+                                <img src='./me.png' alt='User 2' />
+                            </a>
                         </div>
                         <p className='UserName'>Hritesh Roshan Mahapatra
                             <span>Web developer<br /> Idea Innovation Cell
