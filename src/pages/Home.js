@@ -177,19 +177,9 @@ function Home() {
           >
             <Domain />
           </Stack>
-          <Stack
-            sx={{
-              width: "100%",
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: "center"
-            }}
-            ref={contact}
-          >
-            <Contact />
-          </Stack>
+          
           <Stack width={"100%"}>
-            {/* <Footer /> */}
+            <Footer />
           </Stack>
         </Stack>
       </Stack >
