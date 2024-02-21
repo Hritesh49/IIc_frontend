@@ -54,9 +54,10 @@ export default function Login() {
             <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px' }}>Sign In</Typography>
             <Stack sx={{ width: '100%' }}>
               <TextField
-                required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke",fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                   '& .MuiInputBase-input': {
                     color: 'whitesmoke',
+                    fontSize: { xs: "1.5rem", md: "16px" }
                   },
                   '& .MuiInput-underline:before': {
                     borderBottomColor: 'white',
@@ -72,9 +73,10 @@ export default function Login() {
 
             <Stack sx={{ width: '100%' }}>
               <TextField
-                required fullWidth id="outlined-required" label="Password" name='password' type='password' placeholder='Enter password' onChange={(e) => setPassword(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                required fullWidth id="outlined-required" label="Password" name='password' type='password' placeholder='Enter password' onChange={(e) => setPassword(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke",fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                   '& .MuiInputBase-input': {
                     color: 'whitesmoke',
+                    fontSize: { xs: "1.5rem", md: "16px" }
                   },
                   '& .MuiInput-underline:before': {
                     borderBottomColor: 'white',

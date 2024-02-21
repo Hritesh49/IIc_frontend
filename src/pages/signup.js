@@ -62,13 +62,14 @@ export default function SignUp() {
                 <Stack sx={{ display: 'flex', justifyContent: "center", alignItems: "center", flex: "1", height: 'inherit', borderTopRightRadius: '8px', borderBottomRightRadius: "8px", position: 'relative' }}>
                     <Stack sx={{ background: `url(./iic_logo.png)`, height: '100%', display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'contain', zIndex: '1', width: '100%', position: "absolute", opacity: '0.2' }}>
                     </Stack>
-                    <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '8px', zIndex: '2' }}>
+                    <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '8px', zIndex: '2', }}>
                         <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px', }}>Sign Up</Typography>
-                        <Stack sx={{ width: '100%' }}>
+                        <Stack sx={{ width: '100%', }}>
                             <TextField
-                                required fullWidth id="outlined-required" label="Full Name" name='full name' type='text' placeholder='Enter full name' onChange={(e) => setFname(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                                required fullWidth id="outlined-required" label="Full Name" name='full name' type='text' placeholder='Enter full name' onChange={(e) => setFname(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                                     '& .MuiInputBase-input': {
                                         color: 'whitesmoke',
+                                        fontSize: { xs: "1.5rem", md: "16px" },
                                     },
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
@@ -84,9 +85,10 @@ export default function SignUp() {
 
                         <Stack sx={{ width: '100%' }}>
                             <TextField
-                                required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                                required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                                     '& .MuiInputBase-input': {
                                         color: 'whitesmoke',
+                                        fontSize: { xs: "1.5rem", md: "16px" }
                                     },
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
@@ -102,9 +104,10 @@ export default function SignUp() {
 
                         <Stack gap={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                             <TextField
-                                required fullWidth id="outlined-required" label="Phone Number" name='Phno' type='number' placeholder='Enter Phone number' onChange={(e) => setPnum(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                                required fullWidth id="outlined-required" label="Phone Number" name='Phno' type='number' placeholder='Enter Phone number' onChange={(e) => setPnum(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                                     '& .MuiInputBase-input': {
                                         color: 'whitesmoke',
+                                        fontSize: { xs: "1.5rem", md: "16px" }
                                     },
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
@@ -118,9 +121,10 @@ export default function SignUp() {
                                 }} variant="standard" />
 
                             <TextField
-                                required fullWidth id="outlined-required" label="Registration Number" name='regdno' type='number' placeholder='Enter Registration number' onChange={(e) => setRnum(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                                required fullWidth id="outlined-required" label="Registration Number" name='regdno' type='number' placeholder='Enter Registration number' onChange={(e) => setRnum(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                                     '& .MuiInputBase-input': {
                                         color: 'whitesmoke',
+                                        fontSize: { xs: "1.5rem", md: "16px" }
                                     },
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
@@ -135,25 +139,10 @@ export default function SignUp() {
                         </Stack>
 
                         <Stack sx={{ width: '100%' }}>
-                            {/* <TextField
-                                required fullWidth id="outlined-required" label="Branch" name='branch' type='text' placeholder='Enter Branch' onChange={(e) => setBranch(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
-                                    '& .MuiInputBase-input': {
-                                        color: 'whitesmoke',
-                                    },
-                                    '& .MuiInput-underline:before': {
-                                        borderBottomColor: 'white',
-                                    },
-                                    '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
-                                        borderBottomColor: '#00CED1',
-                                    },
-                                    '& .MuiInput-underline:after': {
-                                        borderBottomColor: 'whitesmoke',
-                                    },
-                                }} variant="standard" /> */}
 
-                            <select required name='domain one' onChange={(e) => setDPone(e.target.value)} style={{
+                            <select required name='branch' onChange={(e) => setBranch(e.target.value)} style={{
                                 padding: '.625rem',
-                                fontSize: '1rem',
+                                fontSize: { xs: "1.5rem", md: "16px" },
                                 border: '.0625rem solid #ccc',
                                 borderRadius: '.3125rem',
                                 width: '100%',
@@ -171,7 +160,7 @@ export default function SignUp() {
                                 <option value="graphics" style={{ color: '#021E30' }}>MME</option>
                                 <option value="video-editing" style={{ color: '#021E30' }}>CHE</option>
                                 <option value="content-writing" style={{ color: '#021E30' }}>CIVIL</option>
-                                
+
                             </select>
 
                         </Stack>
@@ -179,7 +168,7 @@ export default function SignUp() {
                         <Stack gap={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                             <select required name='domain one' onChange={(e) => setDPone(e.target.value)} style={{
                                 padding: '.625rem',
-                                fontSize: '1rem',
+                                fontSize: { xs: "1.5rem", md: "16px" },
                                 border: '.0625rem solid #ccc',
                                 borderRadius: '.3125rem',
                                 width: '100%',
@@ -199,10 +188,10 @@ export default function SignUp() {
                             </select>
                             <select required name='domain two' onChange={(e) => setDPtwo(e.target.value)}
                                 style={{
-                                    padding: '10px',
-                                    fontSize: '16px',
-                                    border: '1px solid #ccc',
-                                    borderRadius: '5px',
+                                    padding: '.625rem',
+                                    fontSize: { xs: "1.5rem", md: "16px" },
+                                    border: '.0625rem solid #ccc',
+                                    borderRadius: '.3125rem',
                                     width: '100%',
                                     boxSizing: 'border-box',
                                     background: 'transparent',
@@ -222,9 +211,10 @@ export default function SignUp() {
 
                         <Stack sx={{ width: '100%' }}>
                             <TextField
-                                required fullWidth id="outlined-required" label="Password" name='password' type='password' placeholder='Enter password' onChange={(e) => setPassword(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                                required fullWidth id="outlined-required" label="Password" name='password' type='password' placeholder='Enter password' onChange={(e) => setPassword(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                                     '& .MuiInputBase-input': {
                                         color: 'whitesmoke',
+                                        fontSize: { xs: "1.5rem", md: "16px" }
                                     },
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
@@ -238,7 +228,7 @@ export default function SignUp() {
                                 }} variant="standard" />
                         </Stack>
                         <Stack sx={{ width: '100%' }}>
-                            <Button variant="contained" sx={{ background: "#00CED1", color: '#021E30', padding: '8px 0px', borderRadius: '12px' }} type="submit">
+                            <Button variant="contained" sx={{ background: "#00CED1", color: '#021E30', padding: '8px 0px', borderRadius: '12px', fontSize: { xs: "1.15rem", md: "16px" } }} type="submit">
                                 Sign Up
                             </Button>
                         </Stack>
