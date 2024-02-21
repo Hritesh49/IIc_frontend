@@ -44,7 +44,31 @@ html {
   border: 0.3rem solid transparent;
   background-clip: content-box;
 }
-hr{
-  width: 10px;
-  color: whitesmoke;
+
+.blink {
+  width: 31.25rem;
+  height: 31.25rem;
+  animation: Blink 4s ease-in-out infinite forwards;
+}
+
+@keyframes Blink {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

@@ -7,23 +7,25 @@ body {
     background-color: #021E30;
 }
 
-*{
+* {
     box-sizing: border-box;
-} 
-.imc{
+}
+
+.imc {
     object-fit: cover;
 }
+
 /* Form styles */
 .ContactForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   height: 600px;
+    height: 300px;
     padding: 1rem;
     margin: 40px auto;
     z-index: 1;
-    max-width: 390px;
+    max-width: 350px;
 }
 
 .ContactForm input,
@@ -47,7 +49,7 @@ body {
     border-radius: 7px;
     border: 0;
     position: relative;
-    
+
 }
 
 .ContactForm button:hover {
@@ -62,7 +64,7 @@ body {
 h1 {
     color: #f4f4f4;
     text-align: center;
-  
+
 }
 
 /* Media query */
@@ -70,7 +72,7 @@ h1 {
     .ContactForm {
         max-width: 600px;
         padding: 2rem;
-    }    
+    }
 }
 
 /* Card container */
@@ -82,7 +84,7 @@ h1 {
     margin-left: 3%;
     flex-wrap: wrap;
     height: 300px;
-  
+
 }
 
 /* Card styles */
@@ -100,15 +102,14 @@ h1 {
     color: #fff;
     font-family: "Poppins", sans-serif;
     transition: all 0.3s ease;
-   
-    
+
+
 }
 
 .ContactCard:hover {
     transform: translateY(-10px);
 }
 
-/* User picture styles */
 .UserPicture {
     overflow: hidden;
     width: 5rem;
@@ -134,19 +135,22 @@ h1 {
     transition: all ease-in-out 0.3s;
 }
 
-/* Name styles */
 .UserName {
     margin: 0;
     margin-top: 20px;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 30px;
 
 }
 
-/* Scoped/Unique styles for YourComponent */
 
 .UserName span {
     display: block;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.sp {
+    font-size: 16px;
     font-weight: 200;
-    font-size: 20px;
 }
