@@ -157,6 +157,11 @@ export default function SignUp() {
                                 <option value="mechanical" style={{ color: '#021E30' }}>Mech</option>
                                 <option value="propulsion" style={{ color: '#021E30' }}>EE</option>
                                 <option value="management" style={{ color: '#021E30' }}>EEE</option>
+                                     <option value="graphics" style={{ color: '#021E30' }}>Production</option>
+                                      <option value="graphics" style={{ color: '#021E30' }}>Int chem</option>
+                                        <option value="graphics" style={{ color: '#021E30' }}>Int phy</option>
+                    <option value="graphics" style={{ color: '#021E30' }}>Int maths</option>
+                                    
                                 <option value="graphics" style={{ color: '#021E30' }}>MME</option>
                                 <option value="video-editing" style={{ color: '#021E30' }}>CHE</option>
                                 <option value="content-writing" style={{ color: '#021E30' }}>CIVIL</option>
