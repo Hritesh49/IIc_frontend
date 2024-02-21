@@ -31,7 +31,7 @@ function Footer() {
           <Link href="https://www.facebook.com/ideaclubvssut"><Lottie style={{ width: '4.8125rem', height: '4.8125rem', cursor: 'pointer' }} animationData={face} /></Link>
           <Link href="https://www.youtube.com/channel/UCl1eNHmMb4IjWveBRbKU7Iw"><Lottie style={{ width: '4.8125rem', height: '4.8125rem', cursor: 'pointer' }} animationData={you} /></Link>
           <Link href="https://github.com/Idea-Innovation-Cell-VSSUT-Burla"><Lottie style={{ width: '3.4375rem', height: '3.4375rem', cursor: 'pointer' }} animationData={git} /></Link>
-          <Link href="https://www.linkedin.com/company/idea-and-innovation-cell/"><Lottie style={{ width: '3.4375rem', height: '3.4375rem', cursor: 'pointer' }} animationData={lin} /></Link>
+          <Link href="https://www.linkedin.com/company/idea-and-innovation-cell/"><Lottie style={{ width: '4.8125rem', height: '4.8125rem', cursor: 'pointer' }} animationData={lin} /></Link>
         </Stack>
       </Stack>
       <Typography variant="body1" sx={{ fontWeight: 'lighter', color: 'white', fontSize: { xs: "1.75rem", md: '1.25rem' }, fontFamily: 'Roboto Condensed, sans-serif', width: '100%', margin: "2rem 0px" }}>
