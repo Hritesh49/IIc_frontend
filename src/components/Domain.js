@@ -15,7 +15,7 @@ function Domain() {
   const domain = [
     { title: 'Electronics', animation: electronics, content: ['"where innovation sparks connections, powering the pulse of modern life."'], },
     { title: 'Mechanical', animation: mech, content: ['"From gears to gadgets, mechanical mastery powers progress, driving us forward"'], },
-    { title: 'Propulsion', animation: Chemical, content: ['"where molecules dance to the rhythm of discovery, shaping the essence of our world."'], },
+    { title: 'Chemical', animation: Chemical, content: ['"where molecules dance to the rhythm of discovery, shaping the essence of our world."'], },
     { title: 'CS', animation: cs, content: ['"the language of innovation, where algorithms unlock the potential of tomorrow"'], },
     { title: 'Management', animation: Management, content: ['"Lead, adapt, succeed: It is the art of turning vision into reality."'], },
     { title: 'Graphic Designing', animation: Gd, content: ['"Where imagination meets visual expression."'], },
