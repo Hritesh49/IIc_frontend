@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Landing from '../components/Landing';
-import PDF from "../assets/IIC INDUCTION.docx.pdf";
+import PDF from "../assets/IIC INDUCTION.pdf";
 
 function Home() {
 
