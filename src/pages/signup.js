@@ -184,7 +184,7 @@ export default function SignUp() {
                                 <option value="cs" style={{ color: '#021E30' }}>CS</option>
                                 <option value="electronics" style={{ color: '#021E30' }}>Electronic</option>
                                 <option value="mechanical" style={{ color: '#021E30' }}>Mechanical</option>
-                                <option value="propulsion" style={{ color: '#021E30' }}>Propulsion</option>
+                                <option value="Chemical" style={{ color: '#021E30' }}>Chemical</option>
                                 <option value="management" style={{ color: '#021E30' }}>Management</option>
                                 <option value="graphics" style={{ color: '#021E30' }}>Graphics Designing</option>
                                 <option value="video-editing" style={{ color: '#021E30' }}>Video Editing</option>
@@ -205,7 +205,7 @@ export default function SignUp() {
                                 <option value="cs" style={{ color: '#021E30' }}>CS</option>
                                 <option value="electronics" style={{ color: '#021E30' }}>Electronic</option>
                                 <option value="mechanical" style={{ color: '#021E30' }}>Mechanical </option>
-                                <option value="propulsion" style={{ color: '#021E30' }}>Propulsion </option>
+                                <option value="chemical" style={{ color: '#021E30' }}>Chemical </option>
                                 <option value="management" style={{ color: '#021E30' }}>Management</option>
                                 <option value="graphics" style={{ color: '#021E30' }}>Graphics Designing</option>
                                 <option value="video-editing" style={{ color: '#021E30' }}>Video Editing</option>
