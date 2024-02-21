@@ -1,18 +1,20 @@
 import React, { useState } from "react";
-import { Stack, Button, Typography, TextField, Alert } from '@mui/material';
+import { Stack, Button, Typography, TextField, } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignUp() {
+
     const [fname, setFname] = useState("");
     const [pnum, setPnum] = useState("");
+    const [loading, setloading] = React.useState(false);
     const [rnum, setRnum] = useState("");
     const [email, setEmail] = useState("");
-    const [branch, setDPone] = useState("");
-    const [dpone, setDPtwo] = useState("");
-    const [dptwo, setBranch] = useState("");
+    const [branch, setBranch] = useState("");
+    const [dpone, setDPone] = useState("");
+    const [dptwo, setDPtwo] = useState("");
     const [password, setPassword] = useState("");
 
-    const [serverMessage, setServerMessage] = useState(null);
-
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
 
@@ -44,6 +46,9 @@ export default function SignUp() {
                 console.log(data, "userRegister");
                 if (data.status === "ok") {
                     alert("Registration Successful");
+                    setTimeout(() => {
+                        navigate('/sign-in');
+                    }, 1000);
                 } else {
                     alert("Something went wrong");
                 }
@@ -52,19 +57,14 @@ export default function SignUp() {
 
     return (
         <Stack sx={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: 'center', height: "100dvh" }}>
-            <Stack sx={{ display: "flex", flexDirection: "row", width: '80%', height: '90dvh', boxShadow: "1px 1px 10px 8px #00000048", borderRadius: '8px' }}>
-                <Stack sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: '1', background: `url(./osama.png)`, backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: 'cover', borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px" }}>
+            <Stack sx={{ display: "flex", flexDirection: "row", width: { xs: '100%', sm: '85%', md: '80%' }, height: { xs: "100dvh", sm: "90dvh", md: '90dvh' }, boxShadow: "1px 1px 10px 8px #00000048", borderRadius: '8px', border: { xs: "2px solid white", sm: "none" } }}>
+                <Stack sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center', flex: '1', background: `url(./osama.png)`, backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: 'cover', borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px" }}>
                 </Stack>
-                <Stack sx={{ display: 'flex', justifyContent: "center", alignItems: "center", flex: "1", height: 'inherit', borderTopRightRadius: '8px', borderBottomRightRadius: "8px" }}>
-                    <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
-                        <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px' }}>Sign Up</Typography>
-
-                        {serverMessage && (
-                            <Alert onClose={() => setServerMessage(null)}>
-                                {serverMessage.message}
-                            </Alert>
-                        )}
-
+                <Stack sx={{ display: 'flex', justifyContent: "center", alignItems: "center", flex: "1", height: 'inherit', borderTopRightRadius: '8px', borderBottomRightRadius: "8px", position: 'relative' }}>
+                    <Stack sx={{ background: `url(./iic_logo.png)`, height: '100%', display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'contain', zIndex: '1', width: '100%', position: "absolute", opacity: '0.2' }}>
+                    </Stack>
+                    <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '8px', zIndex: '2' }}>
+                        <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px', }}>Sign Up</Typography>
                         <Stack sx={{ width: '100%' }}>
                             <TextField
                                 required fullWidth id="outlined-required" label="Full Name" name='full name' type='text' placeholder='Enter full name' onChange={(e) => setFname(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
@@ -154,37 +154,47 @@ export default function SignUp() {
                         </Stack>
 
                         <Stack gap={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-                            <TextField
-                                required fullWidth id="outlined-required" label="domain Preference 1" name='domain one' type='text' placeholder='Enter domain preference one' onChange={(e) => setDPone(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
-                                    '& .MuiInputBase-input': {
-                                        color: 'whitesmoke',
-                                    },
-                                    '& .MuiInput-underline:before': {
-                                        borderBottomColor: 'white',
-                                    },
-                                    '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
-                                        borderBottomColor: '#00CED1',
-                                    },
-                                    '& .MuiInput-underline:after': {
-                                        borderBottomColor: 'whitesmoke',
-                                    },
-                                }} variant="standard" />
-
-                            <TextField
-                                required fullWidth id="outlined-required" label="domain Preference 2" name='domain two' type='text' placeholder='Enter domain preference one' onChange={(e) => setDPtwo(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
-                                    '& .MuiInputBase-input': {
-                                        color: 'whitesmoke',
-                                    },
-                                    '& .MuiInput-underline:before': {
-                                        borderBottomColor: 'white',
-                                    },
-                                    '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
-                                        borderBottomColor: '#00CED1',
-                                    },
-                                    '& .MuiInput-underline:after': {
-                                        borderBottomColor: 'whitesmoke',
-                                    },
-                                }} variant="standard" />
+                            <select required name='domain one' onChange={(e) => setDPone(e.target.value)} style={{
+                                padding: '.625rem',
+                                fontSize: '1rem',
+                                border: '.0625rem solid #ccc',
+                                borderRadius: '.3125rem',
+                                width: '100%',
+                                boxSizing: 'border-box',
+                                background: 'transparent',
+                                color: 'whitesmoke',
+                            }}>
+                                <option value="" disabled selected>Select your domain preference 1</option>
+                                <option value="cs" style={{ color: '#021E30' }}>CS</option>
+                                <option value="electronics" style={{ color: '#021E30' }}>Electronic</option>
+                                <option value="mechanical" style={{ color: '#021E30' }}>Mechanical</option>
+                                <option value="propulsion" style={{ color: '#021E30' }}>Propulsion</option>
+                                <option value="management" style={{ color: '#021E30' }}>Management</option>
+                                <option value="graphics" style={{ color: '#021E30' }}>Graphics Designing</option>
+                                <option value="video-editing" style={{ color: '#021E30' }}>Video Editing</option>
+                                <option value="content-writing" style={{ color: '#021E30' }}>Content Writing</option>
+                            </select>
+                            <select required name='domain two' onChange={(e) => setDPtwo(e.target.value)}
+                                style={{
+                                    padding: '10px',
+                                    fontSize: '16px',
+                                    border: '1px solid #ccc',
+                                    borderRadius: '5px',
+                                    width: '100%',
+                                    boxSizing: 'border-box',
+                                    background: 'transparent',
+                                    color: 'whitesmoke',
+                                }}>
+                                <option value="" disabled selected>Select your domain preference 2</option>
+                                <option value="cs" style={{ color: '#021E30' }}>CS</option>
+                                <option value="electronics" style={{ color: '#021E30' }}>Electronic</option>
+                                <option value="mechanical" style={{ color: '#021E30' }}>Mechanical </option>
+                                <option value="propulsion" style={{ color: '#021E30' }}>Propulsion </option>
+                                <option value="management" style={{ color: '#021E30' }}>Management</option>
+                                <option value="graphics" style={{ color: '#021E30' }}>Graphics Designing</option>
+                                <option value="video-editing" style={{ color: '#021E30' }}>Video Editing</option>
+                                <option value="content-writing" style={{ color: '#021E30' }}>Content Writing</option>
+                            </select>
                         </Stack>
 
                         <Stack sx={{ width: '100%' }}>
@@ -204,7 +214,6 @@ export default function SignUp() {
                                     },
                                 }} variant="standard" />
                         </Stack>
-
                         <Stack sx={{ width: '100%' }}>
                             <Button variant="contained" sx={{ background: "#00CED1", color: '#021E30', padding: '8px 0px', borderRadius: '12px' }} type="submit">
                                 Sign Up

@@ -1,14 +1,18 @@
 import { Stack, Typography, TextField, Button } from "@mui/material";
 import React, { useState } from "react";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
-  const [rnum, setRnum] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(rnum, password);
+    console.log(email, password);
     fetch("http://localhost:5000/login-user", {
       method: "POST",
       crossDomain: true,
@@ -18,7 +22,7 @@ export default function Login() {
         "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
-        rnum,
+        email,
         password,
       }),
     })
@@ -30,22 +34,27 @@ export default function Login() {
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
           window.location.href = "./userDetails";
+          setTimeout(() => {
+            navigate('/userDetails');
+          }, 1000);
         }
       });
   }
 
   return (
     <Stack sx={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: 'center', height: "100dvh" }}>
-      <Stack sx={{ display: "flex", flexDirection: "row", width: '80%', height: '90dvh', boxShadow: "1px 1px 10px 8px #00000048", borderRadius: '8px' }}>
-        <Stack sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: '1', background: `url(./osama.png)`, backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: 'cover', borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px" }}>
+      <Stack sx={{ display: "flex", flexDirection: "row", width: { xs: "100%", sm: "90%", md: '80%' }, height: { xs: '100dvh', md: '90dvh' }, boxShadow: "1px 1px 10px 8px #00000048", borderRadius: '8px', border: { xs: "2px solid white", sm: "none" } }}>
+        <Stack sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center', flex: '1', background: `url(./osama.png)`, backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: 'cover', borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px" }}>
         </Stack>
-        <Stack sx={{ display: 'flex', justifyContent: "center", alignItems: "center", flex: "1", height: 'inherit', borderTopRightRadius: '8px', borderBottomRightRadius: "8px" }}>
-          <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
+        <Stack sx={{ display: 'flex', justifyContent: "center", alignItems: "center", flex: "1", height: 'inherit', borderTopRightRadius: '8px', borderBottomRightRadius: "8px", position: 'relative' }}>
+          <Stack sx={{ background: `url(./iic_logo.png)`, height: '100%', display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'contain', zIndex: '1', width: '100%', position: "absolute", opacity: '0.1' }}>
+          </Stack>
+          <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1.5rem', height: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '24px', zIndex: '2' }}>
+            <AccountCircleIcon sx={{ fontSize: "6.25rem", color: 'whitesmoke' }} />
             <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px' }}>Sign In</Typography>
-
             <Stack sx={{ width: '100%' }}>
               <TextField
-                required fullWidth id="outlined-required" label="Registration Number" name='regdno' type='number' placeholder='Enter Registration number' onChange={(e) => setRnum(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
+                required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke" } }} sx={{
                   '& .MuiInputBase-input': {
                     color: 'whitesmoke',
                   },

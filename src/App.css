@@ -40,7 +40,7 @@ html {
 
 .domain::-webkit-scrollbar-thumb {
   background-color: #e4e4e4;
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 0.3rem solid transparent;
   background-clip: content-box;
 }
@@ -70,5 +70,55 @@ html {
 
   100% {
     opacity: 0;
+  }
+}
+
+
+@media screen and (max-width:1440px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (width:768px) {
+  html {
+    font-size: 70%;
+  }
+
+  .lottie {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:760px) {
+  html {
+    font-size: 70%;
+  }
+
+  .lottie {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:599px) {
+  html {
+    font-size: 76%;
+  }
+
+  .lottie {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:376px) {
+  html {
+    font-size: 55%;
   }
 }

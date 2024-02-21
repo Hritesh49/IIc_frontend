@@ -4,15 +4,15 @@ import React from 'react'
 function Landing({ scrollToAbout }) {
     return (
         <>
-            <Box sx={{ width: '100%', height: '100dvh', display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+            <Box sx={{ width: '100%', height: '100dvh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: `url(./back.jpg)`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                 <Stack gap={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Stack gap={2} sx={{ color: 'whitesmoke', textAlign: 'center', display: 'flex', flexDirection: 'column' }}>
-                        <Typography variant='h2' sx={{ fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', fontSize: { xs: "60px", md: '80px' } }}>Join our Induction Programme 2024</Typography>
-                        <Typography variant='h3' sx={{ fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', fontSize: { xs: "30px", md: '50px' } }}>Be a part of the Idea Innovation Cell !</Typography>
+                        <Typography variant='h2' sx={{ fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', fontSize: { xs: "4.375rem", md: '80px' }, filter: 'drop-shadow(0px 4px 8px #ffffff78)' }}>Join our Induction Programme 2024</Typography>
+                        <Typography variant='h3' sx={{ fontWeight: 'bolder', fontFamily: 'Roboto Condensed, sans-serif', fontSize: { xs: "2.8125rem", md: '50px' }, filter: 'drop-shadow(0px 4px 8px #ffffff78)' }}>Be a part of the Idea Innovation Cell !</Typography>
                     </Stack>
-                    <Stack sx={{ color: 'whitesmoke', textAlign: 'center', display: 'flex', flexDirection: 'row', width: '30%', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <Button onClick={scrollToAbout} variant='contained' sx={{ backgroundColor: "#00CED1", color: '#021E30', padding: '8px', fontSize: '16px', }}>Get Started</Button>
-                        <Button variant='contained' sx={{ backgroundColor: "#00CED1", color: '#021E30', padding: '8px', fontSize: '16px', }}>Watch Video</Button>
+                    <Stack gap={4} sx={{ color: 'whitesmoke', textAlign: 'center', display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button onClick={scrollToAbout} variant='contained' sx={{ backgroundColor: "#00CED1", color: '#021E30', padding: { xs: "4px 6px", md: "8px 10px" }, fontSize: { xs: '12px', md: '14px' }, boxShadow: "1px 1px 8px 4px #ffffff50" }}>Get Started</Button>
+                        <Button variant='contained' sx={{ backgroundColor: "#00CED1", color: '#021E30', padding: { xs: "4px 6px", md: "8px 10px" }, fontSize: { xs: '12px', md: '14px' }, boxShadow: "1px 1px 8px 4px #ffffff50" }}>Watch Video</Button>
                     </Stack>
                 </Stack>
             </Box >

@@ -58,6 +58,7 @@ function Home() {
             paddingBottom: '1.5rem'
           }}
         >
+          {/* about us.............. */}
           <Stack
             sx={{
               width: "100%",
@@ -77,19 +78,14 @@ function Home() {
                 alignItems: 'center',
                 width: '90%',
                 border: "2px double white",
-                padding: { xs: "15px", sm: "0px 10px 20px", md: '25px 30px' },
-                borderRadius: '12px', background: '#0000007f',
+                padding: { xs: "20px 10px", sm: "30px 15px", md: '25px 30px' },
+                borderRadius: '12px',
+                background: '#0000007f',
+                position: 'relative',
               }}
             >
-              <img
-                style={{
-                  width: "250px",
-                  height: "250px",
-                  borderRight: '4px solid white'
-                }}
-                src='./iic_logo.png'
-                alt='Logo of IIC'
-              />
+              <Stack sx={{ background: `url(./iic_logo.png)`, height: '300px', display: 'flex', backgroundPosition: "center", backgroundRepeat: 'no-repeat', backgroundSize: 'cover', zIndex: { xs: '2', md: "0" }, width: '300px', position: { xs: 'absolute', md: 'relative' }, opacity: { xs: '0.2', md: "1" } }}>
+              </Stack>
               <Stack
                 gap={2}
                 sx={{
@@ -98,12 +94,13 @@ function Home() {
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: "center",
+                  zIndex: '9',
                 }}
               >
                 <Typography
                   variant='h3'
                   sx={{
-                    fontSize: '60px',
+                    fontSize: { xs: '4.6875rem', md: '60px' },
                     fontWeight: 'bolder',
                     textAlign: 'center',
                     width: '100%',
@@ -115,10 +112,10 @@ function Home() {
                 <Typography
                   variant='body1'
                   sx={{
-                    fontSize: '20px',
+                    fontSize: { xs: '1.5rem', md: '20px' },
                     fontWeight: '200',
                     textAlign: 'center',
-                    lineHeight: '2',
+                    lineHeight: { md: '2' },
                     width: '100%',
                     fontFamily: 'Roboto Condensed, sans-serif'
                   }}
@@ -133,22 +130,25 @@ function Home() {
                   the Induction programme."
                 </Typography>
                 <Stack
+                  gap={4}
                   sx={{
                     display: 'flex',
                     flexDirection: 'row',
-                    width: "30%",
-                    justifyContent: "space-between",
+                    width: "100%",
+                    justifyContent: "center",
                     alignItems: "center"
                   }}
                 >
                   <Button
                     variant='contained'
                     href='/sign-up'
+                    sx={{ padding: { xs: "4px 6px", md: "8px 10px" }, fontSize: { xs: '1rem', md: '14px' }, textAlign: 'center' }}
                   >
                     Register Now
                   </Button>
                   <Button
                     variant='contained'
+                    sx={{ padding: { xs: "4px 6px", md: "8px 10px" }, fontSize: { xs: '1rem', md: '14px' }, textAlign: 'center' }}
                   >
                     Get details
                   </Button>
@@ -169,14 +169,19 @@ function Home() {
           </Stack>
           <Stack
             sx={{
-              width: "100%"
+              width: "100%",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: "center"
             }}
             ref={contact}
           >
             <Contact />
           </Stack>
+          <Stack width={"100%"}>
+            {/* <Footer /> */}
+          </Stack>
         </Stack>
-        <Footer />
       </Stack >
     </>
   )
