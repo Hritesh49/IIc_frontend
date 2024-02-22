@@ -33,7 +33,7 @@ function Footer() {
           <Link href="https://www.linkedin.com/company/idea-and-innovation-cell/"><Lottie style={{ width: '4.8125rem', height: '4.8125rem', cursor: 'pointer' }} animationData={lin} /></Link>
         </Stack>
       </Stack>
-      <Typography variant="body1" sx={{ fontWeight: '400', color: 'white', fontSize: { xs: "1.25rem", md: '1.15rem' }, fontFamily: 'Poppins, sans-serif', width: '100%', margin: "2rem 0px" }}>
+      <Typography variant="body1" sx={{ fontWeight: '300', color: 'white', fontSize: { xs: "1.15rem", md: '1.0.2rem' }, fontFamily: 'Poppins, sans-serif', width: '100%', margin: "2rem 0px" }}>
         © Copyright Idea Innovation Cell. All Rights Reserved
       </Typography>
     </Stack>
