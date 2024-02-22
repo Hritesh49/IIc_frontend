@@ -232,7 +232,13 @@ export default function SignUp() {
                                 }} variant="standard" />
                         </Stack>
                         <Stack sx={{ width: '100%' }}>
-                            <Button variant="contained" sx={{ background: "#00CED1", color: '#021E30', padding: '8px 0px', borderRadius: '12px', fontSize: { xs: "1.15rem", md: "16px" } }} type="submit">
+                            <Button variant="contained" sx={{ background: "#00CED1", color: '#021E30', padding: '8px 0px', borderRadius: '12px', fontSize: { xs: "1.15rem", md: "16px" },'&:hover': {
+                                transform: "scale(1.001)",
+                                background:'white',
+                                color:"#00ced1",
+                                fontWeight:"500",
+                                border:"2px solid #00ced1"
+                            } }} type="submit">
                                 Sign Up
                             </Button>
                         </Stack>

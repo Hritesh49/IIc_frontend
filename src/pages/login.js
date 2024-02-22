@@ -42,7 +42,7 @@ export default function Login() {
   }
 
   return (
-    <Stack sx={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: 'center', height: "100dvh",background:"#021E30" }}>
+    <Stack sx={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: 'center', height: "100dvh", background: "#021E30" }}>
       <Stack sx={{ display: "flex", flexDirection: "row", width: { xs: "100%", sm: "90%", md: '80%' }, height: { xs: '100dvh', md: '90dvh' }, boxShadow: "1px 1px 10px 8px #00000048", borderRadius: '8px', border: { xs: "2px solid white", sm: "none" } }}>
         <Stack sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center', flex: '1', background: `url(./osama.png)`, backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: 'cover', borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px" }}>
         </Stack>
@@ -54,7 +54,7 @@ export default function Login() {
             <Typography variant="h3" sx={{ color: 'white', fontWeight: 'bolder', fontFamily: 'Poppins, sans-serif', borderBottom: '4px solid white', paddingBottom: '0.25rem', borderRadius: '2px' }}>Sign In</Typography>
             <Stack sx={{ width: '100%' }}>
               <TextField
-                required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke",fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
+                required fullWidth id="outlined-required" label="Email Address" name='email' type='email' placeholder='Enter email' onChange={(e) => setEmail(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                   '& .MuiInputBase-input': {
                     color: 'whitesmoke',
                     fontSize: { xs: "1.5rem", md: "16px" }
@@ -73,7 +73,7 @@ export default function Login() {
 
             <Stack sx={{ width: '100%' }}>
               <TextField
-                required fullWidth id="outlined-required" label="Password" name='password' type='password' placeholder='Enter password' onChange={(e) => setPassword(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke",fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
+                required fullWidth id="outlined-required" label="Password" name='password' type='password' placeholder='Enter password' onChange={(e) => setPassword(e.target.value)} InputLabelProps={{ sx: { color: "whitesmoke", fontSize: { xs: "1.5rem", md: "16px" } } }} sx={{
                   '& .MuiInputBase-input': {
                     color: 'whitesmoke',
                     fontSize: { xs: "1.5rem", md: "16px" }
@@ -92,7 +92,15 @@ export default function Login() {
 
 
             <Stack sx={{ width: '100%' }}>
-              <Button variant="contained" sx={{ background: "#00CED1", color: '#021E30', padding: '8px 0px', borderRadius: '12px' }} type="submit" >
+              <Button variant="contained" sx={{
+                background: "#00CED1", color: '#021E30', padding: '8px 0px', borderRadius: '12px', '&:hover': {
+                  transform: "scale(1.001)",
+                  background: 'white',
+                  color: "#00ced1",
+                  fontWeight: "500",
+                  border: "2px solid #00ced1"
+                }
+              }} type="submit" >
                 Sign in
               </Button>
             </Stack>

@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 2000);
   }, []);
   const isLoggedIn = window.localStorage.getItem("loggedIn");
   return (
