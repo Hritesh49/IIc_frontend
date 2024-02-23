@@ -32,7 +32,7 @@ export default function UserHome({ userData }) {
                             <Typography variant="h6" sx={{ fontSize: { xs: "1.25rem", md: '1.5rem' } }}>Name : {userData.fname}</Typography>
                             <Typography variant="body1" sx={{ fontSize: { xs: "1rem", md: '1.25rem' } }} >Email : {userData.email}</Typography>
                             <Typography variant="body1" sx={{ fontSize: { xs: "1rem", md: '1.25rem' } }} >Domain Prefrence 1 : {userData.dpone}</Typography>
-                            <Typography variant="body1" sx={{ fontSize: { xs: "1rem", md: '1.25rem' } }} >Domain Prefrence 1 : {userData.dptwo}</Typography>
+                            <Typography variant="body1" sx={{ fontSize: { xs: "1rem", md: '1.25rem' } }} >Domain Prefrence 2 : {userData.dptwo}</Typography>
                         </Stack>
                     </Stack>
                     {
