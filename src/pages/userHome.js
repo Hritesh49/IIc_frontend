@@ -1,8 +1,33 @@
 import { Button, Link, Stack, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export default function UserHome({ userData }) {
+    var lin;
+
+     if(userData.dpone==="cs")
+     {
+      lin="https://iic-168226.learnyst.com/learn/cs-domains"
+     }
+     if(userData.dpone==="Chemical")
+     {
+      lin="https://iic-168226.learnyst.com/learn/CHEMICAL-DOMAIN"
+     }
+     if(userData.dpone==="electronics")
+     {
+      lin="https://iic-168226.learnyst.com/learn/ELECTRONICS"
+     }
+     if(userData.dpone==="management")
+     {
+      lin="https://iic-168226.learnyst.com/learn/management"
+     }
+
+     if(userData.dpone==="management")
+     {
+      lin="https://iic-168226.learnyst.com/learn/mech"
+     }
+
+
     const logOut = () => {
         window.localStorage.clear();
         window.location.href = "./sign-in";
@@ -44,9 +69,10 @@ export default function UserHome({ userData }) {
                                     <Stack gap={4} sx={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between', alignItems: 'center', padding: "0rem .625rem", }}>
                                         <Typography variant="h6" sx={{ fontSize: { xs: "1.5rem", md: '1.25rem' } }}>Round 1</Typography>
                                         <Button
-                                            href=""
+                                           
+                                            href={lin}
                                             variant="contained"
-                                            sx={{ background: "#00CED1", color: '#021E30', padding: { xs: '.125rem .375rem', md: '4px 10px' }, borderRadius: '.75rem', fontSize: { xs: "1.05rem", md: '0.95rem' } }}>Test on 24th Feb</Button>
+                                            sx={{ background: "#00CED1", color: '#021E30', padding: { xs: '.125rem .375rem', md: '4px 10px' }, borderRadius: '.75rem', fontSize: { xs: "1.05rem", md: '0.95rem' } }}>Take your test now</Button>
                                     </Stack>
                                     <Typography variant="body1" sx={{ padding: "0rem .625rem", fontSize: { xs: "1.05rem", md: '0.95rem' } }}>Quiz round</Typography>
                                 </Stack>
@@ -54,6 +80,7 @@ export default function UserHome({ userData }) {
                                     <Stack gap={4} sx={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between', alignItems: 'center', padding: "0rem .625rem", }}>
                                         <Typography variant="h6" sx={{ fontSize: { xs: "1.5rem", md: '1.25rem' } }}>Round 2</Typography>
                                         <Button
+
                                             href=""
                                             variant="contained"
                                             sx={{ background: "#00CED1", color: '#021E30', padding: { xs: '.125rem .375rem', md: '4px 10px' }, borderRadius: '.75rem', fontSize: { xs: "1.05rem", md: '0.95rem' } }}>Coming Soon</Button>
