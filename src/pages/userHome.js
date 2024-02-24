@@ -9,7 +9,7 @@ export default function UserHome({ userData }) {
      {
       lin="https://iic-168226.learnyst.com/learn/cs-domains"
      }
-     if(userData.dpone==="Chemical")
+     if(userData.dpone==="Chemical"|| userData.dpone==="propulsion")
      {
       lin="https://iic-168226.learnyst.com/learn/CHEMICAL-DOMAIN"
      }
