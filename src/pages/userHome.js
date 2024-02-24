@@ -19,12 +19,12 @@ export default function UserHome({ userData }) {
      }
      if(userData.dpone==="management")
      {
-      lin="https://iic-168226.learnyst.com/learn/management"
+      lin="https://iic-168226.learnyst.com/learn/mech"
      }
 
      if(userData.dpone==="management")
      {
-      lin="https://iic-168226.learnyst.com/learn/mech"
+      lin="https://iic-168226.learnyst.com/learn/management"
      }
 
 
