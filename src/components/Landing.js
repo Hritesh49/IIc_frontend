@@ -12,22 +12,12 @@ function Landing({ scrollToAbout }) {
                     </Stack>
                     <Stack gap={4} sx={{ color: 'whitesmoke', textAlign: 'center', display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
                         <Button onClick={scrollToAbout} variant='contained' sx={{
-                            backgroundColor: "#00CED1", color: 'white', padding: { xs: ".375rem .5rem", md: "10px 12px" }, fontSize: { xs: '1.25rem', md: '14px' }, boxShadow: "1px 1px 8px 4px #ffffff50", border: ".125rem solid white", '&:hover': {
-                                transform: "scale(1.05)",
-                                background: 'white',
-                                color: "#00ced1",
-                                fontWeight: "500",
-                                border: ".125rem solid #00ced1"
-                            }
+                            backgroundColor: "#00CED1", color: 'white', padding: { xs: ".375rem .5rem", md: "10px 12px" }, fontSize: { xs: '1.25rem', md: '14px' }, boxShadow: "1px 1px 8px 4px #ffffff50", border: ".125rem solid white"
+                                
                         }}>Get Started</Button>
                         <Button variant='contained' target="_blank" href='https://youtu.be/YGlJoF81U2E?feature=shared' sx={{
-                            backgroundColor: "#00CED1", color: '#white', padding: { xs: ".375rem .5rem", md: "10px 12px" }, fontSize: { xs: '1.25rem', md: '14px' }, boxShadow: "1px 1px 8px 4px #ffffff50",border:'.125rem solid white', '&:hover': {
-                                transform: "scale(1.05)",
-                                background: 'white',
-                                color: "#00ced1",
-                                fontWeight: "500",
-                                border: ".125rem solid #00ced1"
-                            }
+                            backgroundColor: "#00CED1", color: '#white', padding: { xs: ".375rem .5rem", md: "10px 12px" }, fontSize: { xs: '1.25rem', md: '14px' }, boxShadow: "1px 1px 8px 4px #ffffff50",border:'.125rem solid white'
+                                
                         }}>Watch Video</Button>
                     </Stack>
                 </Stack>
