@@ -70,9 +70,9 @@ export default function UserHome({ userData }) {
                                         <Typography variant="h6" sx={{ fontSize: { xs: "1.5rem", md: '1.25rem' } }}>Round 1</Typography>
                                         <Button
                                            
-                                            href={lin}
+                                            href=""
                                             variant="contained"
-                                            sx={{ background: "#00CED1", color: '#021E30', padding: { xs: '.125rem .375rem', md: '4px 10px' }, borderRadius: '.75rem', fontSize: { xs: "1.05rem", md: '0.95rem' } }}>Take your test now</Button>
+                                            sx={{ background: "#00CED1", color: '#021E30', padding: { xs: '.125rem .375rem', md: '4px 10px' }, borderRadius: '.75rem', fontSize: { xs: "1.05rem", md: '0.95rem' } }}>results will be updated soon</Button>
                                     </Stack>
                                     <Typography variant="body1" sx={{ padding: "0rem .625rem", fontSize: { xs: "1.05rem", md: '0.95rem' } }}>Quiz round</Typography>
                                 </Stack>
