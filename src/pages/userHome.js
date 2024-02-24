@@ -17,7 +17,7 @@ export default function UserHome({ userData }) {
      {
       lin="https://iic-168226.learnyst.com/learn/ELECTRONICS"
      }
-     if(userData.dpone==="management")
+     if(userData.dpone==="mechanical")
      {
       lin="https://iic-168226.learnyst.com/learn/mech"
      }
