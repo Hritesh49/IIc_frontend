@@ -152,13 +152,8 @@ function Home() {
                     variant='contained'
                     href='/sign-up'
                     sx={{
-                      padding: { xs: "4px 6px", md: "8px 10px" },background:'#00ced1', fontSize: { xs: '1rem', md: '14px' }, textAlign: 'center', border: ".125rem solid white", '&:hover': {
-                        transform: "scale(1.05)",
-                        background: 'white',
-                        color: "#00ced1",
-                        fontWeight: "500",
-                        border: ".125rem solid #00ced1"
-                      }
+                      padding: { xs: "4px 6px", md: "8px 10px" },background:'#00ced1', fontSize: { xs: '1rem', md: '14px' }, textAlign: 'center', border: ".125rem solid white"
+            
                     }}
                   >
                     Register Now
@@ -167,13 +162,7 @@ function Home() {
                     variant='contained'
                     onClick={downloadPDF}
                     sx={{
-                      padding: { xs: "4px 6px", md: "8px 10px" },background:'#00ced1', fontSize: { xs: '1rem', md: '14px' }, textAlign: 'center',border:".125rem solid white", '&:hover': {
-                        transform: "scale(1.02)",
-                        background: 'white',
-                        color: "#00ced1",
-                        fontWeight: "500",
-                        border: ".125rem solid #00ced1"
-                      }
+                      padding: { xs: "4px 6px", md: "8px 10px" },background:'#00ced1', fontSize: { xs: '1rem', md: '14px' }, textAlign: 'center',border:".125rem solid white"
                     }}
                   >
                     Get details
