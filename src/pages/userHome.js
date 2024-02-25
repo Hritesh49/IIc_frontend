@@ -7,7 +7,19 @@ export default function UserHome({ userData }) {
   var lin;
   var data = `
 Email
-sjyotiranjan408@gmail.com
+pujaranipanda91@gmail.com
+subhampradhan6237@gmail.com
+is20044himansubaral@gmail.com
+ranjanswain175@gmail.com
+yasasman.819@gmail.com
+omkardas319@gmail.com
+bismitaswain2004@gmail.com
+ayushmankar334@gmail.com
+sethipriyanka1208@gmail.com
+sunandapatra001@gmail.com
+debadyasha@gmail.com
+thebestoney@gmail.com
+dinabandhudash30@gmail.com
 routpriya0110@gmail.com   
 khuntiabswajit@gmail.com
 ayushmantripathy.sbp@gmail.com
