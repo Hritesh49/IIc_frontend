@@ -6,14 +6,17 @@ import { WrapText } from "@mui/icons-material";
 export default function UserHome({ userData }) {
   var lin;
   var data = `
-    Email
+Email
+sjyotiranjan408@gmail.com
+routpriya0110@gmail.com   
 khuntiabswajit@gmail.com
 ayushmantripathy.sbp@gmail.com
 twisalenka2005@gmail.com
 ayushdash0004@gmail.com
 debashishbhoi89@gmail.com
+dishadarshita@gmail.com
 swetangininayak@gmail.com
-    chemical
+chemical
 jyotiranjansahoovssut.ac.in
 balpradyumna5@gmail.com
 adityakumar098k@gmail.com
