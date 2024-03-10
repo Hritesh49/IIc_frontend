@@ -257,7 +257,6 @@ www.chinmayasahoo100@gmail.com
 var bol = 0;
 
 var h = userData.email;
-var a =h.toLowerCase();
 console.log(h);
 var arrobj = [];
 var lines = data.split("\n");
@@ -268,8 +267,8 @@ var rowdata = lines[i].split(",");
     arrobj[i] = {};
 
     for (var j = 0; j < rowdata.length; j++) {
-      var b =rowdata[j].toLowerCase();
-      if (b === a ) {
+     
+      if ( rowdata[j] === h ) {
         console.log(h)
         console.log("found");
         bol = 1;
