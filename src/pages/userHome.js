@@ -7,6 +7,7 @@ export default function UserHome({ userData }) {
   var lin;
   var data = `
 EMAIL ID
+prmohantabtech23@vssut.ac.in
 khuntiabswajit@gmail.com
 soumyabarik566@gmail.com
 sapankumarmohanta304@gmail.com
