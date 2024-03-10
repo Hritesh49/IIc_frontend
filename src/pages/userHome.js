@@ -4,9 +4,12 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { WrapText } from "@mui/icons-material";
 
 export default function UserHome({ userData }) {
+
+
   var lin;
   var data = `
 EMAIL ID
+balpradyumna5@gmail.com
 shloke1504@gmail.com
 prmohantabtech23@vssut.ac.in
 khuntiabswajit@gmail.com
@@ -254,7 +257,7 @@ www.chinmayasahoo100@gmail.com
 var bol = 0;
 
 var h = userData.email;
-
+var a =h.toLowerCase();
 console.log(h);
 var arrobj = [];
 var lines = data.split("\n");
@@ -265,8 +268,8 @@ var rowdata = lines[i].split(",");
     arrobj[i] = {};
 
     for (var j = 0; j < rowdata.length; j++) {
-     
-      if (rowdata[j] === h ) {
+      var b =rowdata[j].toLowerCase();
+      if (b === a ) {
         console.log(h)
         console.log("found");
         bol = 1;
