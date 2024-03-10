@@ -244,6 +244,7 @@ manshadas2004@gmail.com
 chinmayasahoo100@gmail.com
 divyanshi04sahu@gmail.com
 ranjanpanda12340@gmail.com
+ranjanpanda12340@gmail.com
 sankalppanigrahi2000@gmail.com
 ipsitananda2005@gmail.com
 satabdilenka2005@gmail.com
@@ -267,7 +268,7 @@ var rowdata = lines[i].split(",");
         console.log("found");
         bol = 1;
         if (userData.dpone === "cs") {
-          lin = "https://chat.whatsapp.com/LGm3wQDhiZQ3FBalGwCzJi";
+          lin = "https://chat.whatsapp.com/IrCwYHB2tebKpX6ZJFYyJV";
         }
         if (userData.dpone === "Chemical" || userData.dpone === "propulsion") {
           lin = "https://chat.whatsapp.com/DAhRkiisqZ14f4a4QaSXrP";
