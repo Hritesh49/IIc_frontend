@@ -7,6 +7,7 @@ export default function UserHome({ userData }) {
   var lin;
   var data = `
 EMAIL ID
+shloke1504@gmail.com
 prmohantabtech23@vssut.ac.in
 khuntiabswajit@gmail.com
 soumyabarik566@gmail.com
@@ -252,6 +253,7 @@ satabdilenka2005@gmail.com
 var bol = 0;
 
 var h = userData.email;
+
 console.log(h);
 var arrobj = [];
 var lines = data.split("\n");
