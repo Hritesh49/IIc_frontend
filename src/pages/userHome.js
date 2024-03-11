@@ -71,6 +71,7 @@ swetangininayak@gmail.com
 adityakumar098k@gmail.com
 shibasis275@gmail.com
 sahoosnehal09@gmail.com
+Siddharthsarangi2005@gmail.com
 santanukumarsahu2005@gmail.com
 ppdash266@gmail.com
 anurag2005om@gmail.com
