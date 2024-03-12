@@ -9,6 +9,8 @@ export default function UserHome({ userData }) {
   var lin;
   var data = `
 EMAIL ID
+shilpyofficial001@gmail.com
+satyajitsatapathy1212@gmail.com
 ommpattnaik2005@gmail.com
 balpradyumna5@gmail.com
 shloke1504@gmail.com
