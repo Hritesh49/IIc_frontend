@@ -2,262 +2,208 @@ import { Button, Link, Stack, Typography } from "@mui/material";
 import React from "react";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { WrapText } from "@mui/icons-material";
+import pic1 from "../1.png"
+import pic2 from "../2.png"
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 export default function UserHome({ userData }) {
 
 
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    appendDots: (dots) => (
+      <ul style={{ margin: "0px", padding: "0px", display: "flex" , justifyContent:"center" }}>
+        {dots.map((dot, index) => (
+          <li key={index} style={{ listStyle: "none" }}>
+            {dot.props.children}
+          </li>
+        ))}
+      </ul>
+    ),
+    
+  };
+  
+
+
   var lin;
-  var data = `
-EMAIL ID
-shilpyofficial001@gmail.com
-satyajitsatapathy1212@gmail.com
-ommpattnaik2005@gmail.com
-balpradyumna5@gmail.com
-shloke1504@gmail.com
-prmohantabtech23@vssut.ac.in
-khuntiabswajit@gmail.com
-soumyabarik566@gmail.com
-sapankumarmohanta304@gmail.com
-subhrajit349@gmail.com
-ambikaprasaddora@gmail.com
-gurjaskabli5@gmail.com
-ayushmanmishrasbp@gmail.com
-lozlysethy@gmail.com
-22ombhai@gmail.com
-jitenalok03@gmail.com
-harshkumar24academic@gmail.com
-bibhuprasadkar40@gmail.com
-sudesna724@gmail.com
-killamchettyabhilasha@gmail.com
-preetamdash2005@gmail.com
-pswagatika2004@gmail.com
-jani2003.janaki@gmail.com
-subhampradhan6237@gmail.com
-debashishbhoi89@gmail.com
-lipunbehera2005@gmail.com
-saisunayanajena@gmail.com 
-Siddharthsarangi2005@gmail.com
-ayushbiswal720@gmail.com
-omkardas319@gmail.com
-nayakmahimaprasad66@gmail.com
-pknayak.kanha@gmail.com
-suhanidash05@gmail.com
-jenaasmitbiswas@gmail.com
-aryanbhoiaryan@gmail.com
-subratsahoo0509@gmail.com
-khuntiabswajit@gmail.com
-biswaranjan6166@gmail.com
-rayayush24@gmail.com
-ayushmanmishrasbp@gmail.com
-pujaranipanda91@gmail.com
-subhampradhan6237@gmail.com
-is20044himansubaral@gmail.com
-ranjanswain175@gmail.com
-yasasman.819@gmail.com
-omkardas319@gmail.com
-bismitaswain2004@gmail.com
-ayushmankar334@gmail.com
-sethipriyanka1208@gmail.com
-sunandapatra001@gmail.com
-debadyasha@gmail.com
-thebestoney@gmail.com
-dinabandhudash30@gmail.com
-routpriya0110@gmail.com   
-khuntiabswajit@gmail.com
-ayushmantripathy.sbp@gmail.com
-twisalenka2005@gmail.com
-ayushdash0004@gmail.com
-debashishbhoi89@gmail.com
-dishadarshita@gmail.com
-swetangininayak@gmail.com
-adityakumar098k@gmail.com
-shibasis275@gmail.com
-sahoosnehal09@gmail.com
-Siddharthsarangi2005@gmail.com
-santanukumarsahu2005@gmail.com
-ppdash266@gmail.com
-anurag2005om@gmail.com
-bishalhota264@gmail.com
-ayushmanpattanaik001@gmail.com
+  var data = ` 
 rayabhijeet00@gmail.com
-mr.piyush.cv@gmail.com
-ksumitsekhar@gmail.com
-Shloke1504@gmail.com
-sanchitabehera2005@gmail.com
-bishalprusty166@gmail.com
+biswa.jeet.p012@gmail.com
+bprava32@gmail.com
 mohapatraritika58@gmail.com
 chinmayaworks666@gmail.com
-biswa.jeet.p012@gmail.com
-ranbeersinghmcl@gmail.com
-sonakshii1806@gmail.com
-pratyushkumar1304@gmail.com
-sthitijk3001@gmail.com
-laxmipriyasahoo1705@gmail.com
-anantapanigrahia@gmail.com
-aditya170072004@gmail.com
-jenasamira20@gmail.com
-purna90857@gmail.com
-devillegit0@gmail.com
-dabulusahoo00@gmail.com
+sanchitabehera2005@gmail.com
+pratyushkumar23vssut@gmail.com
+dabulusahoo117@gmail.com
 sekharsuman3545@gmail.com
-bprava32@gmail.com
 neevsanghai@gmail.com
-nayakmahimaprasada66@gmail.com
-piyushmohanty509@gmail.com
-nayakbibhuti489@gmail.com
+anurag2005om@gmail.com
+laxmipriyasahoo1705@gmail.com
+sthitijk3001@gmail.com
+shloke1504@gmail.com
+ranbeersinghmcl@gmail.com
+dabulusahoo00@gmail.com
+pujaranipanda91@gmail.com
+sthitijk3001@gmail.com
+sonakshii1806@gmail.com
+sanchitabehera2005@gmail.com
+jenasamira20@gmail.com
+sekharsuman3545@gmail.com
+anurag2005om@gmail.com
+pujaranipanda91@gmail.com
 alpana.mohanty01@gmail.com
-ajayakumarputel@gmail.com
-riyalinpatel018@gmail.com
-satyajitdehury1584@gmail.com
-asmitpatel333@gmail.com
-kumarpritish2004@gmail.com
-dishadarshita@gmail.com
-srustisrujanikatripathy2004@gmail.com
-laxmipriyaswain2006@gmail.com
-hara.prout2004@gmail.com
-biswabandhusahoo001@gmail.com
-ayushsunny50@gmail.com
-anishananda04@gmail.com
-senapatiastha2809@gmail.com
-dsandhyarani609@gmail.com
-akashpanda2025@gmail.com
-subodhmeher9876@gmail.com
-artatran.mahakud@gmail.com
-pradhanankita244@gmail.com
-subrajeetpadhy172@gmail.com
-sanjivaneemohanty199@gmail.com
-swarupp2006@gmail.com
-jassijasaswinip2@gmail.com
-biswajitmallik3212005@gmail.com
-omxavier.2005@gmail.com
-ankitdash.755@gmail.com
-bishal behra39@gmail.com
-sahoosuvendu3251@gmail.com
-ansulnanda07@gmail.com
-mohantyanwesa28@gmail.com
-dhirajagrawal461@gmail.com
-souravpradhan388@gmail.com
-md9020096@gmail.com
-pujaranisahoo732@gmail.com
-debadattamahapatra023@gmail.com
-mr.piyush.cv@gmail.com
-pradhanmohit884@gmail.com
-ajay.tripathybgr@gmail.com
-sambeet.sabat.2002@gmail.com
-vpranati8@gmail.com
-radharamanswain022@gmail.com
-isthatkaran@gmail.com
-kanistha.mallick@gmail.com
 pandamonalisa67@gmail.com
-lozlysethy@gmail.com
-sonalikapatel31@gmail.com
-adishree.pattnaik@gmail.com
-darshana.puhan04@gmail.com
-hellohrishita@gmail.com
-nshbiswal7@gmail.com
-harmitmohapatra924@gmail.com
-bibhuprasadkar40@gmail.com
-harshkumar24academic@gmail.com
-preetamdash2005@gmail.com
-pswagatika2004@gmail.com
-jani2003.janaki@gmail.com
-sudesna724@gmail.com
-subhampradhan6237@gmail.com
-debashishbhoi89@gmail.com
-ayushzxkumar410@gmail.com
+sanchitabehera2005@gmail.com
+sonakshii1806@gmail.com
+mang
+aditikar0205@gmail.com
+gurleenkaurnandra737@gmail.com
+divyanshi04sahu@gmail.com
+ipsitananda2005@gmail.com
+twisalenka2005@gmail.com
+ranjanpanda12340@gmail.com
+pranitrout2@gmail.com
+sarabaral351@gmail.com
+subratranjanpanda7@gmail.com
+aurosish18@gmail.com
+washiur9861@gmail.com
+Siddharthsarangi2005@gmail.com
+sankalppanigrahi2000@gmail.com
+chinmayasahoo100@gmail.com
+ayushmantripathy.sbp@gmail.com
+chinmayasahoo100@gmail.com
+rajanpanda12340@gmail.com
+mech
+bismitaswain2004@gmail.com
 debadyasha@gmail.com
-panigrahyayushman@gmail.com
-omkarchowdhury14@gmail.com
+hellohrishita@gmail.com
 aniketpalei77@gmail.com
 ashutoshsahooomm@gmail.com
-bismitaswain2004@gmail.com
-debiprasadsahoo2006@gmail.com
-lipunbehera2005@gmail.com
-kpradhan7219@gmail.com
+bibhuprasadkar40@gmail.com
+harshkumar24academic@gmail.com
+panigrahyayushman@gmail.com
+saisunayanajena@gmail.com
+bsushrisanskruti@gmail.com
+killamchettyabhilasha@gmail.com
+smrutisikha1632@gmail.com
 pradhankiranmayee20442@gmail.com
-debashishbarikpvt@gmail.com
 soumyabarik566@gmail.com
 jhasketan532003@gmail.com
-padmaksheesahoo123@gmail.com
-smrutisikha1632@gmail.com
-killamchettyabhilasha@gmail.com
-saisunayanajena@gmail.com
-bsushrisanskruti@gmail.com
-rajkumardhal234@gmail.com
+ayushbiswal720@gmail.com
+jenaasmitbiswas@gmail.com
+pratyushkumar1304@gmail.com
+jenajyotiprakash741@gmail.com
+ayushmanmishrasbp@gmail.com
+rounakpadhan@gmail.com
+manshadas2004@gmail.com
+chem
 patradebadutta25@gmail.com
-abhijeet1510god@gmail.com
-nayakabhisek001@gmail.com
-abinashankit64@gmail.com
-darshana.puhan04@gmail.com
 svmishra2805@gmail.com
 allenbal26638@gmail.com
-ksibasaktipatro@gmail.com
-routraybibekananda8@gmail.com
-amanatrout@gmail.com
 sunandapatra001@gmail.com
-jani2003.janaki@gmail.com
-deepansumuni@gmail.com
-debaprasadsarangi86@gmail.com
 sohantripathy1234@gmail.com
-namratamahanta2@gmail.com
-imsrm85@gmail.com
 gyanar142@gmail.com
-roshansa005@gmail.com
-killamchettyabhilasha@gmail.com
-snehamohapatra415@gmail.com
-bsushrisanskruti@gmail.com
 shikhanaik03722@gmail.com
 jenajyotiprakash741@gmail.com
-saisunayanajena@gmail.com
 sambitsundarbhutia@gmail.com
-shruthikalahasti@gmail.com
-gulamalikhan05@gmail.com
 sapankumarmohanta304@gmail.com
-asutoshpanda524@gmail.com
-nirwair2829@gmai.com
-starborn097@gmail.com
-sanketsahoo40@gmail.com
-anweshapanda234@gmail.com
-amanatrout@gmail.com
-hydravulture@gmail.com
-ssuchismita735@gmail.com
-harshkumar24academic@gmail.com
-aditikar0205@gmail.com
-sahudeepakkumar885@gmail.com
-adityarajmohapatra2004@gmail.com
-sumitswain39@gmail.com
-sarabaral351@gmail.com
-biswarupaparida234@gmail.com
-ansulnanda07@gmail.com
-suvam.04.dora@gmail.com
-ashutoshgouda72@gmail.com
+etc
+senapatiastha2809@gmail.com
+ayushsunny50@gmai.com
+nayakmahimaprasada66@gmail.com
+biswabandhusahoo8@gmail.com
+sonalikapatel31@gmail.com
+vpranati8@gmail.com
+sanjivaneemohanty199@gmail.com
+lozlysethy@gmail.com
+pujaranisahoo732@gmail.com
+jassijasaswinip2@gmail.com
+mr.piyush.cv@gmail.com
+sambeet.sabat.2002@gmail.com
+sahoosuvendu3251@gmail.com
+ankitdash.755@gmail.com
+ajay.tripathybgr@gmail.com
+souravpradhan388@gmail.com
+dhirajagrawal461@gmai.com
+dishadarshita@gmail.com
+anishananda04@gmail.com
+hara.prout2004@gmail.com
+asmit.patel333@gmail.com
+kumarpritish2004@gmail.com
+piyushmohanty509@gmail.com
+jitenalok03@gmail.com
+mohantyanwesa28@gmail.com
+nontech
+E-mail
+nandinisahu.mm@gmail.com
+bismitaswain2004@gmail.com
+siddhismishra2006@gmail.com
+mihikasingh1504@gmail.com
+piyushmohanty509@gmail.com
+subratsahoo0509@gmail.com
+allenbal26638@gmail.com
+radaramanswain002@gmail.com
+ankitdash.755@gmail.com
+ksibasaktipatro@gmail.com
+pratyushsahoo88518@gmail.com
 routpriya0110@gmail.com
-sameersahu5766@gmail.com
-washiur9861@gmail.com
-ssubhranshu16@gmail.com
-ayushdash0004@gmail.com
-twisalenka2005@gmail.com
-subratranjanpanda7@gmail.com
-vijaykumar17032005@gmail.com
-rahulsingh03007@gmail.com
-pranitrout2@gmail.com
-gurleenkaurnandra737@gmail.com
-samikshapadhy7@gmail.com
-debiprasadpradhan109@gmail.com
-aurosish18@gmail.com
-ayushmantripathy.sbp@gmail.com
-ks848009@gmail.com
+srustisrujanikatripathy2004@gmail.com
+debaprasadsaragi86@gmail.com
+yasasman.819@gmail.com
+imamanpandey04@gmail.com
+shikhanaik03722@gmail.com
+bibhuprasadkar40@gmail.com
+ipsisarangi@gmail.com
+EMAIL ID
+bismitaswain2004@gmail.com
+debadyasha@gmail.com
 hellohrishita@gmail.com
+aniketpalei77@gmail.com
+ashutoshsahooomm@gmail.com
+bibhuprasadkar40@gmail.com
+harshkumar24academic@gmail.com
+panigrahyayushman@gmail.com
+saisunayanajena@gmail.com
+bsushrisanskruti@gmail.com
+killamchettyabhilasha@gmail.com
+smrutisikha1632@gmail.com
+pradhankiranmayee20442@gmail.com
+soumyabarik566@gmail.com
+jhasketan532003@gmail.com
+ayushbiswal720@gmail.com
+jenaasmitbiswas@gmail.com
+khuntiabswajit@gmail.com
+pratyushkumar1304@gmail.com
+jenajyotiprakash741@gmail.com
+ayushmanmishrasbp@gmail.com
+rounakpadhan@gmail.com
 manshadas2004@gmail.com
-chinmayasahoo100@gmail.com
-divyanshi04sahu@gmail.com
-ranjanpanda12340@gmail.com
-ranjanpanda12340@gmail.com
-sankalppanigrahi2000@gmail.com
-ipsitananda2005@gmail.com
-satabdilenka2005@gmail.com
-www.chinmayasahoo100@gmail.com
+patradebadutta25@gmail.com
+svmishra2805@gmail.com
+allenbal26638@gmail.com
+sunandapatra001@gmail.com
+sohantripathy1234@gmail.com
+gyanar142@gmail.com
+shikhanaik03722@gmail.com
+jenajyotiprakash741@gmail.com
+sambitsundarbhutia@gmail.com
+sapankumarmohanta304@gmail.com
+abhijeet1510god@gmail.com
+imsrm85@gmail.com
+adityakumar098k@gmail.com
  `;
+
+
+
+
 var bol = 0;
 
 var h = userData.email;
@@ -277,20 +223,29 @@ var rowdata = lines[i].split(",");
         console.log("found");
         bol = 1;
         if (userData.dpone === "cs") {
-          lin = "https://chat.whatsapp.com/IrCwYHB2tebKpX6ZJFYyJV";
+          lin = "https://chat.whatsapp.com/CmfEBDF4pXy8i8OLBPXZgp";
         }
         if (userData.dpone === "Chemical" || userData.dpone === "propulsion") {
-          lin = "https://chat.whatsapp.com/DAhRkiisqZ14f4a4QaSXrP";
+          lin = "https://chat.whatsapp.com/BbKbnkqnwKKLSPEy4yzJK9";
         }
         if (userData.dpone === "electronics") {
-          lin = "https://chat.whatsapp.com/IgoZVHNyPwpCJTzLDl2qbO";
+          lin = "https://chat.whatsapp.com/Jh9wVZ7RPvI4SQDHaGg5jX";
         }
         if (userData.dpone === "mechanical") {
-          lin = "https://chat.whatsapp.com/KBYI6bREFYCCs1Ff0wnyXS";
+          lin = "https://chat.whatsapp.com/IaMGUvrElC40sT3sNt4A7m";
         }
 
         if (userData.dpone === "management") {
-          lin = "https://chat.whatsapp.com/CBiTXsnE8qL8oACtcsO1HF";
+          lin = "https://chat.whatsapp.com/DIXtJJ08AcBAvRNEqV3HaV";
+        }
+        if (userData.dpone === "content-writing") {
+          lin = "https://chat.whatsapp.com/C1bIJeIjSBc8t5SIiEfUUE";
+        }
+        if (userData.dpone === "Graphics Designing") {
+          lin = "https://chat.whatsapp.com/FFzEVpTS9HR9iZlQLzIJMZ";
+        }
+        if (userData.dpone === "Video Editing") {
+          lin = "https://chat.whatsapp.com/L64CR3fg7MDLo3hoPW4SXf";
         }
       }
     }
@@ -326,7 +281,39 @@ var rowdata = lines[i].split(",");
     window.location.href = "./sign-in";
   };
   return (
-    <Stack
+    
+    <div>
+    <div className="smain">
+    <div className="sphotos">
+      <Slider {...settings}>
+        <div>
+          <img className="sphotos" src={pic1} alt="First" />
+        </div>
+        <div>
+          <img className="sphotos" src={pic2} alt="Second" />
+        </div>
+      </Slider>
+    </div>
+   
+    {bol === 1 ? (
+                     <div className="slink" >
+                     <a href={lin}>Get Your whataspp Link</a>
+                  </div>
+                    ) : (
+                      <div className="slink" >
+                      Not Selected 
+                   </div>
+                    )}
+    
+    </div>
+    
+    
+    
+        </div>
+
+
+
+  /*  <Stack
       sx={{
         width: "100%",
         height: "100dvh",
@@ -638,5 +625,6 @@ var rowdata = lines[i].split(",");
         </Stack>
       </Stack>
     </Stack>
+    */
   );
 }
